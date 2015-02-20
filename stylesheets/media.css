@@ -6,7 +6,7 @@
 
 /* these queries allow the icons and name to always be on one line. */
 @media (max-width: 850px) {
-	.aboutMe_, .connect_, .resume_ {
+	.aboutMe_, .connect_, .resume_, .projects_, .wallpapers_ {
 		width: 90%;
 	}
 
@@ -20,12 +20,18 @@
 		height: 60px;
 	}
 
+	/* github icons - formatting text wrapping */
+	.faicon {
+		margin-left: 10px;
+		margin-bottom: 10px;
+	}
+
 	h1 {
 		font-size: 4em;
 	}
 
 	nav {
-		top: 290px; 		/* when font size is smaller on a small window */
+		top: 295px; 		/* when font size is smaller on a small window */
 	}
 }
 
@@ -47,6 +53,16 @@
 	nav {
 		top: 290px; 		/* when font size is smaller on a small window */
 	}
+
+	/* changes nav font size to be on one line */
+	#navUl a  {
+		font-size: .9em;
+	}
+
+	#navUl a:hover {
+		opacity: 1.0;
+		font-size: .9em;	/* font size didn't change for hover autpmatically */
+	}
 }
 
 /* changes connect icons */
@@ -55,11 +71,25 @@
 		width: 50px;
 		height: 50px;
 	}
+
+	.icon {
+		opacity: 1.0;
+	}
 }
 
 @media (max-width: 480px) and (min-width: 374px) {
 	nav {
-		top: 233px; 		/* when font size is smaller on a small window */
+		top: 290px; 		/* when font size is smaller on a small window */
+	}
+
+	/* changes nav font size to be on one line */
+	#navUl a {
+		font-size: .75em;
+	}
+
+	#navUl a:hover {
+		opacity: 1.0;
+		font-size: .75em;	/* font size didn't change for hover autpmatically */
 	}
 }
 
@@ -78,12 +108,12 @@
 		margin: 10px 20px 10px;
 	}
 
-	.aboutMe_, .connect_, .resume_ {
+	.aboutMe_, .connect_, .resume_, .projects_, .wallpapers_ {
 		width: 100%;
-		
 		padding: 0 0 0 0;
 	}
 
+	/* larger connect icons for touch */
 	.connect_ ul {
 		width: 100%;
 	}
@@ -98,8 +128,23 @@
 		height: 48px;
 	}
 
+	/* github icons */
+	.faicon {
+		float: right;
+		font-size: 48px;
+		color: #000;
+		margin-left: 10px;
+		margin-bottom: 10px;
+	}
+
+	.faicon:hover {
+		font-size: 48px;
+		color: #1976d2;
+	}
+	
+	/* headings */
 	h1 {
-		font-size: 3em;
+		font-size: 3.5em;
 
 	}
 
@@ -124,34 +169,40 @@
 		
 	}
 
+	/* top bar */
 	.headerBlock {
 		margin: 0 0 90px;
-		padding: 40px 0 3px 0;		/* 3 to make header exactly 290px */
+		padding: 40px 0 0;
 	}
 
+	/* back icon on coolstuff page always white on mobile */
+	
+
+	/* padding to match h4 */
 	.involvement ul, .langTech ul{
 		padding-top: 6px;
 	}
 
+	/* nav bar */
 	nav {
-		background: #039be5;
 		line-height: 56px;
-		font-size: 1.1em;
+		font-size: .84em;
+		font-weight: 700;
 		text-align: center;
 		top: 290px;
-
 	}
 
-	#navUl {
-		background-color: #039be5;
-
-	}	
+	nav ul li {
+	    padding-right: 2%;
+  		padding-left: 2%;
+  		font-size: 1em;
+	}
 
 	p {
 		font-size: .86em;
-
 	}
 
+	/* profile picture */
 	.profile {
 		width: 100px;
 		height: 100px;
@@ -159,12 +210,26 @@
 		padding: 0;
 	}
 
+	/* resume */
 	.resumeDownload {
 		font-size: .84rem;
+		width: 95%;
+		margin-right: 20px;
 	}
 
 	section {
-		margin-bottom: 10px;
+	    margin: 10px 20px 10px;
+	}
+
+	table {
+		width: 100%;
+		padding: 2px;
+	}
+
+	table td {
+		padding auto;
+		margin: 0px;
+		padding: 1px;
 	}
 
 	.timeBreak {
@@ -173,6 +238,11 @@
 
 	ul li {
 		font-size: .86em;
+		font-weight: 400;
 	}
-}
 
+	.wallpapers_ {
+		width: 90%;
+	}
+
+}

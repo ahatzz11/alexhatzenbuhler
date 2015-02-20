@@ -1,0 +1,164 @@
+body {
+	font-family: "Lato", sans-serif;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+/* button is for the "download (2560x1600)" button */
+.button {
+	position: absolute;
+	top: 10px;
+	right: 24px;
+	background: #558b2f;
+	border-radius: 3px;
+	height: 36px;
+	width: 200px;
+	
+}
+
+.buttonText {
+	line-height: 36px;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+	color: #fff;
+	font-size: .86em;
+	
+}
+
+.button:hover {
+	background: #33691e;
+	box-shadow: 0 2px 4px rgba(0,0,0,.28), 0 0 2px rgba(0,0,0,.14);
+}
+
+/* downloadButton is for the download fab */
+.downloadButton {
+	display: none;
+	position: fixed;
+	right: 24px;
+	bottom: 24px;
+	background: #558b2f;
+	width: 56px;
+	height: 56px;
+	border-radius: 28px;
+	box-shadow: 0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28);
+}
+
+.downloadButton:hover {
+	box-shadow: 0 0 6px rgba(0,0,0,.16),0 6px 12px rgba(0,0,0,.32);
+}
+
+.downloadButton img {
+	width: 24px;
+	height: 24px;
+	padding: 16px;
+}
+
+.downloadButton img:hover {
+	opacity: 1.0;
+}
+
+/* headings */
+h1 {
+	font-family: "Roboto", sans-serif;
+	font-size: 1.5em;
+	font-weight: 300;
+	line-height: 1;
+	background-position: center center;
+	color: white;
+	padding-left: 64px;
+}
+
+header {
+	position: absolute;
+	vertical-align: center;
+	width: 100%;
+	height: 56px;
+	z-index: 7;
+	background-color: #689f38;
+	box-shadow: 0 4px 8px rgba(0,0,0,.28), 0 0 4px rgba(0,0,0,.14);
+}
+
+/* icon is for the back icon */
+.icon {
+	position: absolute;
+	cursor: pointer;
+	width: 24px;	
+	height: 24px;
+	background-position: center center;
+	padding: 2px;
+	opacity: 0.75;
+}
+
+.icon:hover {
+	opacity: 1.0;
+}
+
+.iconBackground {
+	position: absolute;
+	top: 14px;
+	left: 18px;
+	border-radius: 14px;
+	width: 28px;
+	height: 28px;
+}
+
+.iconBackground:active {
+	background: #558b2f;
+}
+
+/* full sized picture */
+.pictureFull {
+	position: absolute;
+	top: 56px;
+	width: 100%;
+}
+
+/* displays and hides respective download buttons */
+@media only screen and (max-device-width: 480px) {
+	.button {
+		display: none;
+	}
+
+	.downloadButton {
+		display: inline;
+	}
+
+	.downloadButton img {
+		opacity: 1.0;
+	}
+
+	h1 {
+		margin: 19px 0 0;		/* 19px to center the smaller h1 */
+		font-size: 1.3em;
+		line-height: 1;
+	}
+
+	.icon {
+		position: absolute;
+		cursor: pointer;
+		width: 24px;	
+		height: 24px;
+		padding: 2px;
+		opacity: 1.0;
+	}
+
+	.icon:hover {
+		opacity: 1.0;
+	}
+
+	.iconBackground {
+		position: absolute;
+		top: 14px;
+		left: 14px;
+		border-radius: 14px;
+		width: 28px;
+		height: 28px;
+	}
+
+	.iconBackground:active {
+		background: inherit;
+	}
+}

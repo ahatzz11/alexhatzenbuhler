@@ -1,17 +1,3 @@
-/* blank since there is no background */
-.aboutMe_, .connect_ {
-	background-color: #fff;
-}
-
-/* sets positioning for each section/div */
-.aboutMe_, .connect_, .resume_, .projects_ {
-	text-align: center;
-	margin: 0 auto 0;
-	padding: 0;
-	width: 70%;
-	border-radius: 10px;
-}
-
 body {
 	font-family: "Lato", sans-serif;
 	text-align: center;
@@ -21,61 +7,10 @@ body {
 	padding: 0;
 }
 
-.bubble {
-	position: fixed;
-	left: 24px;
-	bottom: 24px;
-	width: 40px;
-	height: 40px;
-	border-radius: 20px;
-	background-color: #689f38;
-	opacity: 0.03;
-}
-
-/* connect icon adjustment */
-.connect_ ul {
-	margin: auto;
-	padding: 20px 0 0;
-	text-align: center;
-}
-
-.connect_ ul li {
-	display: inline;
-	list-style-type: none;
-	padding: 0 5% 0 5%;
-}
-
-.connect_ ul li a img {
-	width: 60px;
-	height: 60px;
-}
-
-.connect_ ul li a {
-	color: #1976d2;
-}
-
-.connect_ ul li :hover {
-	opacity: 0.95;
-}
-
-/* this is to correct for the default div rules so resume is uniform */
+/* this is to correct for the default div rules so wallpapers is uniform */
 div {
 	width: 100%;
 	margin: 0 auto 0;
-}
-
-/* faicon is the fontAwesome github icon */
-.faicon {
-	float: right;
-	font-size: 56px;
-	color: #000;
-	margin-left: 210px;
-	padding: 10px;
-}
-
-.faicon:hover {
-	font-size: 56px;
-	color: #1976d2;
 }
 
 /* footer is for the bottom name and the link */
@@ -95,7 +30,7 @@ footer .copyright a {
 
 /* headings */
 h1 {
-	font-family: "Roboto", serif;
+	font-family: "Roboto", sans-serif;
 	font-size: 6em;
 	font-weight: 100;
 	line-height: 1.2;
@@ -138,61 +73,48 @@ h5 {
 	
 }
 
-/* the top colored block - blue */
+/* the top colored block - green */
 .headerBlock {
 	position: relative;
 	z-index: 7;
 	width: 100%;
-	background-color: #1976d2;
+	background-color: #689f38;
 	margin: 0 0 70px;
 	padding: 75px 0 27px 0px;		/* 27 to make header exactly 350px */
 	text-align: center;
-
 }
 
-/* puts spacing between h3 and list, since there is no h4 to add space */
-.involvement ul, .langTech ul , .projects_ section ul{
-	padding-top: 10px;
+/* icon is for the back icon */
+.icon {
+	position: absolute;
+	cursor: pointer;
+	width: 24px;	
+	height: 24px;
+	padding: 2px;
+	opacity: 0.75;
 }
 
-/* allows the two lists to be together, since they are both under */
-.ivnTech {
-	margin-bottom: 0;
-	padding-bottom: 5px;
+.icon:hover {
+	opacity: 1.0;
 }
 
-/* konami and the following are for the konami code in projects */
-.konami {
-	font-family: "Dosis", sans-serif;
-	list-style-type: none;
-	opacity: .1;
-	text-align: center;
+/* this uses the nav id for js */
+#iconBack {
+	position: fixed;
+	text-align: left;
+	z-index: 11;
+	left: 18px;
+	top: 14px;
+	border-radius: 14px;
+	width: 28px;
+	height: 28px;
 }
 
-.konami a:hover {
-	color: #000;
+.iconBackground:active {
+	background: #558b2f;
 }
 
-.konami a:hover {
-	opacity: .5;
-}
-
-.konami small {
-	opacity: 1;
-}
-
-.konamiba {
-	font-family: "Dosis", sans-serif;
-	font-weight: 800;
-	font-size: 1.1em;
-}
-
-/* lets the download link be at the bottom of the lang section */
-.langTech {
-	margin-bottom: 0px;
-}
-
-/*mobile menu button*/
+/* mobile menu button - currently unused*/
 #menu {
 	display: none;
 }
@@ -200,7 +122,7 @@ h5 {
 /* nav - navUl is for styling the nav bar and nav elements */
 nav {
 	position: absolute;
-	background-color: #1976d2;
+	background-color: #689f38;
 	font-size: 1.3em;
 	line-height: 56px;
 	top: 350px;	
@@ -209,10 +131,16 @@ nav {
 }
 
 nav ul li {
+	color: white;
 	display: inline-block;
 	list-style-type: none;
 	padding-right: 3%;
 	padding-left: 3%;
+	opacity: 0.75;
+}
+
+nav ul li:hover {
+	opacity: 1.0;
 }
 
 #navUl {
@@ -222,19 +150,22 @@ nav ul li {
 	box-shadow: 0 4px 8px rgba(0,0,0,.28), 0 0 4px rgba(0,0,0,.14);
 }
 
-#navUl a {
-	color: #fff;
-	opacity: 0.75;
-	font-size: 1em;
-}
-
-#navUl a:hover {
-	opacity: 1.0;
-}
-
 p {
 	font-weight: 400;
 	font-size: 1em;
+}
+
+/* thumbnails for wallpapers */
+.pictureSmall {
+	width: 100%;
+	border-radius: 10px;
+	opacity: 1.0;
+}
+
+.pictureSmall:hover {
+	opacity: 0.95;
+	background-color: white;
+	box-shadow: 0 2px 4px rgba(0,0,0,.28), 0 0 2px rgba(0,0,0,.14);
 }
 
 /* main profile picture */
@@ -247,12 +178,7 @@ p {
 	margin: 0;
 }
 
-.quote {
-	font-size: x-small;	
-	padding-bottom: 10px;
-}
-
-/* each main section, about me, connect, education, workHistory, etc. */
+/* each main section, wallpapers, etc. */
 section {
 	background-color: #ececec;
 	border-radius: 10px;
@@ -260,22 +186,13 @@ section {
 	padding: 10px 13px 15px;		/* 13 to account for line height on headings */
 }
 
-small {
-	font-size: .5em;
-	opacity: .5;
+/* padding around wallpaper table */
+table {
+	padding: 3px;
 }
 
-/* dates throughout */
-time {
-	font-style: italic;
-	font-size: smaller;
-	font-weight: 400;
-}
-
-.time {
-	font-style: italic;
-	font-size: smaller;
-	font-weight: 400;
+table td {
+	padding: 3px;
 }
 
 /* has dates on the next line for mobile */
@@ -293,6 +210,24 @@ ul li {
 	text-align: left;
 }
 
+/* wallpaper adjustment */
+.wallpapers_  {
+	text-align: center;
+	margin: 0 auto 0;
+	padding: 0;
+	width: 70%;
+	border-radius: 10px;
+}
+
+.wallpapers_ {
+	margin-top: 0;
+	margin-bottom: 30px;
+	
+}
+
+
+
+
 
 /* ************************************************************ */
 
@@ -303,18 +238,6 @@ ul li {
 	text-align: right;
 	padding: 10px 0 0 0;
 	width: 100%;
-}
-
-a.after:after{
-  bottom:-0.25em;
-}
-
-a.first:after{
-  left:0;
-}
-
-a.before:hover:before,a.after:hover:after{
-  width:100%;
 }
 
 a,a:visited,a:hover,a:active{
@@ -328,7 +251,7 @@ a,a:visited,a:hover,a:active{
 }
 
 a:hover{
-	color: #1976d2;
+	color: #689f38;
 }
 
 a.before:before,a.after:after{
@@ -341,19 +264,17 @@ a.before:before,a.after:after{
 
 a.before:before{
     top: -0.25em;
-    border-radius: 10px;
 }
 
 a.after:after{
     bottom: -0.25em;
-    border-radius: 10px;
 }
 
 a.before:before,a.after:after{
     height: 5px;
     height: 0.2rem;
     width: 0;
-    background: #1976d2;
+    background: #689f38;
 }
 
 .square{
@@ -381,7 +302,7 @@ a.before:before,a.after:after{
 	width: 5px;
 	width: 0.2rem;
 	height: 0;
-	background: #1976d2;
+	background: #689f38;
 }
 
 .square:before{
