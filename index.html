@@ -1,15 +1,25 @@
+<!--
+	Total lines of handwritten code ~ 1534
+	- does not include any js
+	- only counts the fullscreen html page once, since it's copy/paste
+	- does not include link animation css
+
+	approx. hours of work ~ 60
+	-->
+
 <!DOCTYPE html>
-<! i
-    _   _          
-   /_\ | |_____ __ 
-  / _ \| / -_) \ / 
- /_/ \_\_\___/_\_\                                                             
-  _  _      _               _         _    _         
- | || |__ _| |_ ______ _ _ | |__ _  _| |_ | |___ _ _ 
+<!--
+    _   _
+   /_\ | |_____ __
+  / _ \| / -_) \ /
+ /_/ \_\_\___/_\_\
+  _  _      _               _         _    _
+ | || |__ _| |_ ______ _ _ | |__ _  _| |_ | |___ _ _
  | __ / _` |  _|_ / -_) ' \| '_ \ || | ' \| / -_) '_|
- |_||_\__,_|\__/__\___|_||_|_.__/\_,_|_||_|_\___|_|  	
+ |_||_\__,_|\__/__\___|_||_|_.__/\_,_|_||_|_\___|_|
 
  -->
+<!DOCTYPE html>
 
 <html>
 <head>
@@ -17,18 +27,22 @@
 	<title>Alex Hatzenbuhler</title>
 	<meta name="description" content="The personal site for Alex Hatzenbuhler." />
 	<link rel="stylesheet" href="stylesheets/style.css" type="text/css" />
-	<link rel="stylesheet" href="stylesheets/media.css" type="text/css" />	
-	<link rel="stylesheet" href="images/font_awesome/css/font-awesome.min.css" type="font" />
-	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:400,700|Roboto:100,700|Dosis:800" type="font" />
-	<link rel="icon" href="images/favicon.ico" type="image/png"/>
+	<link rel="stylesheet" href="stylesheets/media.css" type="text/css" />
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="http://fonts.googleapis.com/css?family=Dosis:800|Lato:400,700|Roboto:100,700" rel="stylesheet" type="text/css" />
+	<link rel="icon" href="images/favicon.ico" type="image/png" />
 
 	<!-- set the width of the viewport to the device width, for mobile -->
 	<meta name="viewport" content="width=device-width" />
 
+	<!--[if lt IE 9]>
+	    <script src="//cdnjs.buttflare.com/ajax/libs/html5shiv/r29/html5.min.js"></script>
+	<![endif]-->
+
 	<!-- JAVASCRIPT -->
 	<!-- jquery libraries -->
     <script src="javascript/jquery/jquery-latest.min.js" type="text/javascript"></script>
-    <script src="javascript/jquery/jquery.localscroll.js" type="text/javascript"></script> 
+    <script src="javascript/jquery/jquery.localscroll.js" type="text/javascript"></script>
     <script src="javascript/jquery/jquery.scrollTo.js" type="text/javascript"></script>
 
     <!-- navigation bar script -->
@@ -49,9 +63,9 @@
     <!-- scrolling script -->
     <script type="text/javascript">
         $(document).ready(function () {
-            $('#nav').localScroll({ 
-                target:'body', 
-                duration: 800, 
+            $('#nav').localScroll({
+                target:'body',
+                duration: 800,
                 });
         });
     </script>
@@ -70,15 +84,19 @@
 			<!-- div for mobile menu -->
 			<div id="menu">Menu</div>
 			<ul id="navUl">
-				<li><a href="#header">Top</a></li>
-				<li><a href="#aboutMe">About Me</a></li>
-				<li><a href="#connect">Connect</a></li>
-				<li><a href="#resume">Resume</a></li>
-				<li><a href="#projects">Projects</a></li>
+				<a href="#aboutMe"><li>About Me</li></a>
+				<a href="#connect"><li>Connect</li></a>
+				<a href="#projects"><li>Projects</li></a>
+				<a href="#resume"><li>Resume</li></a>
 			</ul>
+			<a href="#header">
+				<div id="fabID" class="fab">
+					<img class="icon" src="images/arrowUp.png" alt="Arrow Back"/>
+				</div>
+			</a>
 		</nav>
 	</header>
-	<!-- 
+	<!--
 		******************************
 		********** ABOUT ME **********
 		******************************
@@ -91,7 +109,7 @@
 		<p class="quote">A good friend Chris says: </p><blockquote><p class="quote">"He is the coolest."</p></blockquote>
 	</section>
 
-	<!-- 
+	<!--
 		****************************
 		********** CONNECT **********
 		****************************
@@ -108,7 +126,7 @@
 			<li><a href="http://twitter.com/ahatzz11" title="Go to my Twitter">
 				<img src="images/connect/twitter.png" alt="Twitter Icon"/>
 			</a></li>
-			<li><a href="https://www.linkedin.com/in/alexhatzenbuhler" title="Go to my LinkedIn">	
+			<li><a href="https://www.linkedin.com/in/alexhatzenbuhler" title="Go to my LinkedIn">
 				<img src="images/connect/linkedin.png" alt="Linkedin Icon"/>
 				</a></li>
 			<li><a href="mailto:alex.hatzz11@gmail.com" title="Send me an email">
@@ -117,7 +135,97 @@
 		</ul>
 	</section>
 
-	<!-- 
+	<!--
+		******************************
+		********** Projects **********
+		******************************
+	-->
+	<div id="projects" class="projects_">
+		<h2>Projects</h2>
+		<section class="counter">
+			<h3>Counter for Wear
+				<a class="faicon" href="https://github.com/ahatzz11/Counter-for-Wear">
+					<i class="fa fa-github"></i>
+				</a>
+			</h3>
+			<article>
+				<ul>
+					<li>A counting application for Android Wear</li>
+					<li>Language: Java</li>
+				</ul>
+			</article>
+		</section>
+
+		<section class="hotel">
+			<h3>Hotel System
+				<a class="faicon" href="https://github.com/ahatzz11/Hotel-System">
+					<i class="fa fa-github"></i>
+				</a>
+			</h3>
+			<article>
+				<ul>
+					<li>A parallelized hotel reservation system</li>
+					<li>Parallelization is achieved by the use semaphores</li>
+					<li>Language: C++</li>
+				</ul>
+			</article>
+		</section>
+		<section class="k-means">
+			<h3>k-Means 
+				<a class="faicon" href="https://github.com/ahatzz11/k-Means">
+					<i class="fa fa-github"></i>
+				</a>
+			</h3>
+			<article>
+				<ul>
+					<li>Implementation of the k-Means algorithm both in serial, and parallel</li>
+					<li>Language: Python</li>
+				</ul>
+			</article>
+		</section>
+		<section class="pokedex">
+			<h3>PokéDex
+				<a class="faicon" href="https://github.com/ahatzz11/PoxeDex">
+					<i class="fa fa-github"></i>
+				</a>
+			</h3>
+			<article>
+				<ul>
+					<li>The web app and backend database for a pokédex</li>
+					<li>Languages: Java; SQL</li>
+				</ul>
+			</article>
+		</section>
+		<section class="alexHatz">
+			<h3>This Site!
+				<a class="faicon" href="https://github.com/ahatzz11/alexhatzenbuhler">
+					<i class="fa fa-github"></i>
+				</a>
+			</h3>
+			<article>
+				<ul>
+					<li>This site originally started as an assignment for a class I took in college called <i>Intro to Web Design</i>. I decided to continue to add and polish it into what you see today!</li>
+					<li>Languages: HTML5; CSS3; JavaScript; jQuery</li>
+					<li>Interested in some more cool stuff? Enter the <a class="first after" href="http://en.wikipedia.org/wiki/Konami_Code">konami code</a> anywhere on this page. <small> works on mobile too!</small>
+					<li class="konami"><a href="coolstuff.html">
+						<i class="fa fa-arrow-up"></i>
+						<i class="fa fa-arrow-up"></i>
+						<i class="fa fa-arrow-down"></i>
+						<i class="fa fa-arrow-down"></i>
+						<i class="fa fa-arrow-left"></i>
+						<i class="fa fa-arrow-right"></i>
+						<i class="fa fa-arrow-left"></i>
+						<i class="fa fa-arrow-right"></i>
+						<span class="konamiba">B</span>
+						<span class="konamiba">A</span>
+						<small><b> or click if you're lazy</b></small></a>
+					</li>
+				</ul>
+			</article>
+		</section>
+	</div>
+
+		<!--
 		****************************
 		********** RESUME **********
 		****************************
@@ -215,114 +323,24 @@
 				<ul>
 					<li>Java; C; C++; C#; HTML5; CSS3; XML; SQL</li>
 					<li>Visual Studio; Eclipse; Netbeans; Android Studio; SVN; Git</li>
-				</ul>	
+				</ul>
 		</section>
 
 		<div class="resumeDownload">
 			<span class="square">
 				<a class="before after" href="documents/Resume%20-%20Alex%20Hatzenbuhler.docx">download a copy of my resume as a .docx</a>
-			</span>			
+			</span>
 		</div>
 	</div>
 
-	<!-- 
-		******************************
-		********** Projects **********
-		******************************
-	-->
-	<div id="projects" class="projects_">
-		<h2>Projects</h2>
-		<section class="counter">
-			<h3>Counter for Wear
-				<a class="faicon" href="https://github.com/ahatzz11/Counter-for-Wear">
-					<i class="fa fa-github"></i>
-				</a>
-			</h3>
-			<article>
-				<ul>
-					<li>A counting application for Android Wear</li>
-					<li>Language: Java</li>
-				</ul>
-			</article>
-		</section>
-
-		<section class="hotel">
-			<h3>Hotel System
-				<a class="faicon" href="https://github.com/ahatzz11/Hotel-System">
-					<i class="fa fa-github"></i>
-				</a>
-			</h3>
-			<article>
-				<ul>
-					<li>A parallelized hotel reservation system</li>
-					<li>Parallelization is achieved by the use semaphores</li>
-					<li>Language: C++</li>
-				</ul>
-			</article>
-		</section>
-		<section class="k-means">
-			<h3>k-Means 
-				<a class="faicon" href="https://github.com/ahatzz11/k-Means">
-					<i class="fa fa-github"></i>
-				</a>
-			</h3>
-			<article>
-				<ul>
-					<li>Implementation of the k-Means algorithm both in serial, and parallel</li>
-					<li>Language: Python</li>
-				</ul>
-			</article>
-		</section>
-		<section class="pokedex">
-			<h3>PokéDex
-				<a class="faicon" href="https://github.com/ahatzz11/PoxeDex">
-					<i class="fa fa-github"></i>
-				</a>
-			</h3>
-			<article>
-				<ul>
-					<li>The web app and backend database for a pokédex</li>
-					<li>Languages: Java; SQL</li>
-				</ul>
-			</article>
-		</section>
-		<section class="alexHatz">
-			<h3>This Site!
-				<a class="faicon" href="https://github.com/ahatzz11/alexhatzenbuhler">
-					<i class="fa fa-github"></i>
-				</a>
-			</h3>
-			<article>
-				<ul>
-					<li>This site originally started as an assignment for a class I took in college called <i>Intro to Web Design</i>. I decided to continue to add and polish it into what you see today!</li>
-					<li>Languages: HTML5; CSS3; JavaScript; jQuery</li>
-					<li>Interested in some more cool stuff? Enter the <a class="first after" href="http://en.wikipedia.org/wiki/Konami_Code">konami code</a> anywhere on this page. <small> works on mobile too!</small>
-					<li class="konami"><a href="coolstuff.html">
-						<i class="fa fa-arrow-up"></i>
-						<i class="fa fa-arrow-up"></i>
-						<i class="fa fa-arrow-down"></i>
-						<i class="fa fa-arrow-down"></i>
-						<i class="fa fa-arrow-left"></i>
-						<i class="fa fa-arrow-right"></i>
-						<i class="fa fa-arrow-left"></i>
-						<i class="fa fa-arrow-right"></i>
-						<span class="konamiba">B</span>
-						<span class="konamiba">A</span>
-						<small><b> or click if you're lazy</b></small></a>
-					</li>
-				</ul>
-			</article>
-		</section>
-	</div>
-
-	<footer>
-		<div class="arrow bounce">
-
-</div>
-	
+	<footer id="foot">
 		<span class="copyright">Designed by
 			<a href="index.html">Alex Hatzenbuhler</a>
 		</span>
+		<a href="coolstuff.html">
+			<div class="bubble"></div>
+		</a>
+
 	</footer>
 
 	<!--google analytics script-->
