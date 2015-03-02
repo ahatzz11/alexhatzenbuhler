@@ -1,4 +1,4 @@
-/* 
+/*
 	media rules regarding screen sizes are before the mobile rules
 	so that the mobile rules can take priority.
 	*/
@@ -141,16 +141,16 @@
 		font-size: 48px;
 		color: #1976d2;
 	}
-	
+
 	/* headings */
 	h1 {
-		font-size: 3.5em;
+		font-size: 3.3em;
 
 	}
 
 	h2 {
 		font-size: 2em;
-		
+
 	}
 
 	h3 {
@@ -166,7 +166,7 @@
 
 	h5 {
 		font-size: .84em;
-		
+
 	}
 
 	/* top bar */
@@ -176,7 +176,7 @@
 	}
 
 	/* back icon on coolstuff page always white on mobile */
-	
+
 
 	/* padding to match h4 */
 	.involvement ul, .langTech ul{
@@ -193,9 +193,9 @@
 	}
 
 	nav ul li {
-	    padding-right: 2%;
-  		padding-left: 2%;
-  		font-size: 1em;
+	    padding-right: 3%;
+  		padding-left: 3%;
+  		font-size: 1.2em;
 	}
 
 	p {

@@ -64,13 +64,42 @@ div {
 	margin: 0 auto 0;
 }
 
+/* floating action button */
+#fabID {
+	-webkit-transform: translateZ(0);		/* fixes static issues on chrome/windows */
+	display: none;
+	position: fixed;
+	right: 24px;
+	bottom: 24px;
+	background: #558b2f;
+	width: 56px;
+	height: 56px;
+	border-radius: 28px;
+	box-shadow: 0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28);
+}
+
+#fabID:hover {
+	display: block;
+	box-shadow: 0 0 6px rgba(0,0,0,.16),0 6px 12px rgba(0,0,0,.32);
+}
+
+.fab img {
+	width: 24px;
+	height: 24px;
+	padding: 16px;
+}
+
+.fab img:hover {
+	opacity: 1.0;
+}
+
 /* faicon is the fontAwesome github icon */
 .faicon {
 	float: right;
 	font-size: 56px;
 	color: #000;
 	margin-left: 210px;
-	padding: 10px;
+	padding: 7px 10px 10px;
 }
 
 .faicon:hover {
@@ -105,7 +134,7 @@ h1 {
 	margin: 0 0 0 0;
 }
 
-h2 {	
+h2 {
 	font-size: 4em;
 	font-weight: 400;
 	line-height: 1em;
@@ -121,7 +150,7 @@ h3 {
 	line-height: 1;
 }
 
-h4 {	
+h4 {
 	font-size: 1.1em;
 	margin: 0;
 	text-align: left;
@@ -135,7 +164,6 @@ h5 {
 	margin-top: 0;
 	margin-bottom: 0;
 	font-style: italic;
-	
 }
 
 /* the top colored block - blue */
@@ -147,7 +175,6 @@ h5 {
 	margin: 0 0 70px;
 	padding: 75px 0 27px 0px;		/* 27 to make header exactly 350px */
 	text-align: center;
-
 }
 
 /* puts spacing between h3 and list, since there is no h4 to add space */
@@ -203,7 +230,7 @@ nav {
 	background-color: #1976d2;
 	font-size: 1.3em;
 	line-height: 56px;
-	top: 350px;	
+	top: 350px;
 	z-index: 2;
 	width: 100%;
 }
