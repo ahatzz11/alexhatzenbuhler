@@ -12,7 +12,7 @@
 
 	.connect_ ul li {
 		width: 100%;
-		padding: 0 3% 0 3%;
+		padding: 0 2.1% 0 2.1%;
 	}
 
 	.connect_ ul li a img {
@@ -100,7 +100,7 @@
 		• mobile devices have less margin on the side
 		• connect has a 100% width and icons are 48x48 to accomodate icons on mobile
 		• headings and text have been resized to look better on mobile
-		• profile picture and h1 are larger 
+		• profile picture and h1 are larger
 	*/
 
 @media only screen and (max-device-width: 480px) {
@@ -120,7 +120,7 @@
 
 	.connect_ ul li {
 		width: 100%;
-		padding: 0 1.7% 0 1.7%;
+		padding: 0 2.3% 0 2.3%;
 	}
 
 	.connect_ ul li a img {
