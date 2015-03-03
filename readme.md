@@ -35,6 +35,9 @@ url: http://alexhatzenbuhler.com
 			|-- scrolling scripts
 		|-- navigation.js
 
+	live
+		|-- optomized version for deployment
+
 	stylesheets
 		|-- coolstyle.css
 		|-- fullscreen.css
