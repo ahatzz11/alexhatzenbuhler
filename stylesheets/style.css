@@ -28,7 +28,7 @@ body {
 	width: 40px;
 	height: 40px;
 	border-radius: 20px;
-	background-color: #689f38;
+	background-color: #43a047;
 	opacity: 0.03;
 }
 
@@ -71,7 +71,7 @@ div {
 	position: fixed;
 	right: 24px;
 	bottom: 24px;
-	background: #558b2f;
+	background: #43a047;
 	width: 56px;
 	height: 56px;
 	border-radius: 28px;
@@ -448,7 +448,7 @@ a.before:before,a.after:after{
 }
 
 .warren a:hover {
-	color: #4CAF50;
+	color: #43a047;
 }
 
 .warren a.after:after{
@@ -466,7 +466,7 @@ a.before:before,a.after:after{
     height: 5px;
     height: 0.2rem;
     width: 0;
-    background: #4CAF50;
+    background: #43a047;
 }
 
 .warren a.first:after{

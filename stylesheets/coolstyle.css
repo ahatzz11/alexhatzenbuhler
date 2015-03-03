@@ -78,7 +78,7 @@ h5 {
 	position: relative;
 	z-index: 7;
 	width: 100%;
-	background-color: #689f38;
+	background-color: #43a047;
 	margin: 0 0 70px;
 	padding: 75px 0 27px 0px;		/* 27 to make header exactly 350px */
 	text-align: center;
@@ -122,10 +122,10 @@ h5 {
 nav {
 	-webkit-transform: translateZ(0);		/* fixes static issues on chrome/windows */
 	position: absolute;
-	background-color: #689f38;
+	background-color: #43a047;
 	font-size: 1.3em;
 	line-height: 56px;
-	top: 350px;	
+	top: 350px;
 	z-index: 2;
 	width: 100%;
 }
