@@ -274,11 +274,6 @@ p {
 	margin: 0;
 }
 
-.quote {
-	font-size: x-small;	
-	padding-bottom: 10px;
-}
-
 /* each main section, about me, connect, education, workHistory, etc. */
 section {
 	background-color: #ececec;
