@@ -1,6 +1,6 @@
 @media (max-width: 850px) {
 .aboutMe_,.connect_,.resume_,.projects_,.wallpapers_{width:90%}
-.connect_ ul li{width:100%;padding:0 3%}
+.connect_ ul li{width:100%;padding:0 2.1%}
 .connect_ ul li a img{width:60px;height:60px}
 .faicon{margin-left:10px;margin-bottom:10px}
 h1{font-size:4em}
@@ -27,7 +27,7 @@ nav{top:290px}
 .aboutMe_ p{margin:10px 20px}
 .aboutMe_,.connect_,.resume_,.projects_,.wallpapers_{width:100%;padding:0}
 .connect_ ul{width:100%}
-.connect_ ul li{width:100%;padding:0 2.1%}
+.connect_ ul li{width:100%;padding:0 2.3%}
 .connect_ ul li a img{width:48px;height:48px}
 .faicon{float:right;font-size:48px;color:#000;margin-left:10px;margin-bottom:10px}
 .faicon:hover{font-size:48px;color:#1976d2}

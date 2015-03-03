@@ -75,7 +75,7 @@ header {
 	width: 100%;
 	height: 56px;
 	z-index: 7;
-	background-color: #43a047;
+	background-color: #388e3c;
 	box-shadow: 0 4px 8px rgba(0,0,0,.28), 0 0 4px rgba(0,0,0,.14);
 }
 
@@ -104,7 +104,7 @@ header {
 }
 
 .iconBackground:active {
-	background: #558b2f;
+	background: #2e7d32;
 }
 
 /* full sized picture */

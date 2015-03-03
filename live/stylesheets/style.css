@@ -1,14 +1,14 @@
 .aboutMe_,.connect_{background-color:#fff}
 .aboutMe_,.connect_,.resume_,.projects_{text-align:center;margin:0 auto;padding:0;width:70%;border-radius:10px}
 body{font-family:"Lato",sans-serif;text-align:center;width:100%;height:100%;margin:0;padding:0}
-.bubble{position:fixed;left:24px;bottom:24px;width:40px;height:40px;border-radius:20px;background-color:#689f38;opacity:.03}
+.bubble{position:fixed;left:24px;bottom:24px;width:40px;height:40px;border-radius:20px;background-color:#388e3c;opacity:.03}
 .connect_ ul{margin:auto;padding:20px 0 0;text-align:center}
 .connect_ ul li{display:inline;list-style-type:none;padding:0 5%}
 .connect_ ul li a img{width:60px;height:60px}
 .connect_ ul li a{color:#1976d2}
 .connect_ ul li :hover{opacity:.95}
 div{width:100%;margin:0 auto}
-#fabID{-webkit-transform:translateZ(0);display:none;position:fixed;right:24px;bottom:24px;background:#558b2f;width:56px;height:56px;border-radius:28px;box-shadow:0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28)}
+#fabID{-webkit-transform:translateZ(0);display:none;position:fixed;right:24px;bottom:24px;background:#43a047;width:56px;height:56px;border-radius:28px;box-shadow:0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28)}
 #fabID:hover{display:block;box-shadow:0 0 6px rgba(0,0,0,.16),0 6px 12px rgba(0,0,0,.32)}
 .fab img{width:24px;height:24px;padding:16px}
 .fab img:hover{opacity:1}
@@ -49,18 +49,28 @@ ul li{text-align:left}
 a.after:after{bottom:-.25em}
 a.first:after{left:0}
 a.before:hover:before,a.after:hover:after{width:100%}
-a,a:visited,a:hover,a:active{-webkit-backface-visibility:hidden;backface-visibility:hidden;position:relative;transition:.25s color ease;text-decoration:none;color:#000;font-size:1em}
+a,a:visited,a:hover,a:active{-webkit-backface-visibility:hidden;backface-visibility:hidden;position:relative;transition:.6s color ease;text-decoration:none;color:#000;font-size:1em}
 a:hover{color:#1976d2}
-a.before:before,a.after:after{content:"";transition:.25s all ease;-webkit-backface-visibility:hidden;backface-visibility:hidden;position:absolute}
+a.before:before,a.after:after{content:"";transition:.6s all ease;-webkit-backface-visibility:hidden;backface-visibility:hidden;position:absolute}
 a.before:before{top:-.25em;border-radius:10px}
 a.after:after{bottom:-.25em;border-radius:10px}
 a.before:before,a.after:after{height:5px;height:.2rem;width:0;background:#1976d2}
 .square{box-sizing:border-box;text-align:left;position:relative;font-size:1em;overflow:hidden}
 .square a{position:static;text-align:left;font-size:100%;padding:.2em .4em}
-.square:before,.square:after{content:"";box-sizing:border-box;transition:.8s all ease;-webkit-backface-visibility:hidden;backface-visibility:hidden;position:absolute;width:5px;width:.2rem;height:0;background:#1976d2}
+.square:before,.square:after{content:"";box-sizing:border-box;transition:.6s all ease;-webkit-backface-visibility:hidden;backface-visibility:hidden;position:absolute;width:5px;width:.2rem;height:0;background:#1976d2}
 .square:before{left:0;border-radius:10px;bottom:-.2em}
 .square:after{right:0;border-radius:10px;top:-.2em}
 .square a:before{left:0;border-radius:10px;transition:.6s all ease}
 .square a:after{right:0;border-radius:10px;transition:.6s all ease}
 .square:hover:before,.square:hover:after{height:calc(100% + 0.4em)}
 .square:hover a:before,.square:hover a:after{width:100%}
+.site a,.site a:visited,.site a:hover,.site a:active{-webkit-backface-visibility:hidden;backface-visibility:hidden;position:relative;transition:.6s color ease;text-decoration:none}
+.site a:hover{color:#1976d2}
+.site a.after:after{content:"";transition:.6s all ease;-webkit-backface-visibility:hidden;backface-visibility:hidden;position:absolute;bottom:-.11em;height:5px;height:.2rem;width:0;background:#1976d2}
+.site a.first:after{left:0}
+.site a.after:hover:after{width:100%}
+.warren a,.warren a:visited,.warren a:hover,.warren a:active{-webkit-backface-visibility:hidden;backface-visibility:hidden;position:relative;transition:.6s color ease;text-decoration:none}
+.warren a:hover{color:#388e3c}
+.warren a.after:after{content:"";transition:.6s all ease;-webkit-backface-visibility:hidden;backface-visibility:hidden;position:absolute;bottom:-.1em;height:5px;height:.2rem;width:0;background:#388e3c}
+.warren a.first:after{left:0}
+.warren a.after:hover:after{width:100%}
