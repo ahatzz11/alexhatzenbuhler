@@ -315,7 +315,6 @@ ul li {
 	text-align: left;
 }
 
-
 /* ************************************************************ */
 
 /* The following is for the active resume link */
@@ -343,7 +342,7 @@ a,a:visited,a:hover,a:active{
     -webkit-backface-visibility: hidden;
             backface-visibility: hidden;
 	position: relative;
-    transition: .25s color ease;
+    transition: .6s color ease;
 	text-decoration: none;
 	color: #000000;
 	font-size: 1em;
@@ -355,7 +354,7 @@ a:hover{
 
 a.before:before,a.after:after{
     content: "";
-    transition: .25s all ease;
+    transition: .6s all ease;
     -webkit-backface-visibility: hidden;
             backface-visibility:hidden;
     position: absolute;
@@ -370,6 +369,8 @@ a.after:after{
     bottom: -0.25em;
     border-radius: 10px;
 }
+
+
 
 a.before:before,a.after:after{
     height: 5px;
@@ -396,7 +397,7 @@ a.before:before,a.after:after{
 .square:before,.square:after{
   	content: "";
 	box-sizing: border-box;
-	transition: .8s all ease;
+	transition: .6s all ease;
 	-webkit-backface-visibility: hidden;
 	        backface-visibility: hidden;
 	position: absolute;
@@ -437,3 +438,80 @@ a.before:before,a.after:after{
 .square:hover a:before,.square:hover a:after{
     width: 100%;
 }
+
+.warren a, .warren a:visited, .warren a:hover, .warren a:active{
+  	-webkit-backface-visibility: hidden;
+        	backface-visibility: hidden;
+	position: relative;
+	transition: 0.6s color ease;
+	text-decoration: none;
+}
+
+.warren a:hover {
+	color: #4CAF50;
+}
+
+.warren a.after:after{
+  	content: "";
+  	transition: 0.6s all ease;
+  	-webkit-backface-visibility: hidden;
+        	backface-visibility: hidden;
+  	position: absolute;
+}
+.warren a.after:after{
+  	bottom: -0.1em;
+}
+
+.warren a.after:after{
+    height: 5px;
+    height: 0.2rem;
+    width: 0;
+    background: #4CAF50;
+}
+
+.warren a.first:after{
+  	left: 0;
+}
+.warren a.after:hover:after{
+  	width: 100%;
+}
+
+
+
+.site a, .site a:visited, .site a:hover, .site a:active{
+  	-webkit-backface-visibility: hidden;
+        	backface-visibility: hidden;
+	position: relative;
+	transition: 0.6s color ease;
+	text-decoration: none;
+}
+
+.site a:hover {
+	color: #1976d2;
+}
+
+.site a.after:after{
+  	content: "";
+  	transition: 0.6s all ease;
+  	-webkit-backface-visibility: hidden;
+        	backface-visibility: hidden;
+  	position: absolute;
+}
+.site a.after:after{
+  	bottom: -0.11em;
+}
+
+.site a.after:after{
+    height: 5px;
+    height: 0.2rem;
+    width: 0;
+    background: #1976d2;
+}
+
+.site a.first:after{
+  	left: 0;
+}
+.site a.after:hover:after{
+  	width: 100%;
+}
+
