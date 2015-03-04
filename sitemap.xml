@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+	    xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>http://alexhatzenbuhler.com</loc>
     <loc>http://alexhatzenbuhler.com/</loc>
@@ -15,5 +16,32 @@
     <loc>http://alexhatzenbuhler.com/fullscreen/sky.html</loc>
     <loc>http://alexhatzenbuhler.com/fullscreen/snow.html</loc>
     <loc>http://alexhatzenbuhler.com/fullscreen/windmill.html</loc>
+
+	<image:image>
+		<image:loc>http://alexhatzenbuhler.com/images/arrowBack.png</image:loc>
+		<image:loc>http://alexhatzenbuhler.com/images/arrowUp.png</image:loc>
+		<image:loc>http://alexhatzenbuhler.com/images/</image:loc>
+		<image:loc>http://alexhatzenbuhler.com/images/</image:loc>
+		<image:loc>http://alexhatzenbuhler.com/images/</image:loc>
+		<image:loc>http://alexhatzenbuhler.com/images/</image:loc>
+		<image:loc>http://alexhatzenbuhler.com/images/</image:loc>
+		<image:loc>http://alexhatzenbuhler.com/images/</image:loc>
+		<image:loc>http://alexhatzenbuhler.com/images/</image:loc>
+		<image:loc>http://alexhatzenbuhler.com/images/</image:loc>
+		<image:loc>http://alexhatzenbuhler.com/images/</image:loc>
+		<image:loc>http://alexhatzenbuhler.com/images/</image:loc>
+		<image:loc>http://alexhatzenbuhler.com/images/</image:loc>
+		<image:loc>http://alexhatzenbuhler.com/images/</image:loc>
+		<image:loc>http://alexhatzenbuhler.com/images/</image:loc>
+		<image:loc>http://alexhatzenbuhler.com/images/</image:loc>
+		<image:loc>http://alexhatzenbuhler.com/images/</image:loc>
+		<image:loc>http://alexhatzenbuhler.com/images/</image:loc>
+		<image:loc>http://alexhatzenbuhler.com/images/</image:loc>
+		<image:loc>http://alexhatzenbuhler.com/images/</image:loc>
+		<image:loc>http://alexhatzenbuhler.com/images/</image:loc>
+	</image:image>
+
+
+
   </url>
 </urlset>
