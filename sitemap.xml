@@ -20,28 +20,68 @@
 	<image:image>
 		<image:loc>http://alexhatzenbuhler.com/images/arrowBack.png</image:loc>
 		<image:loc>http://alexhatzenbuhler.com/images/arrowUp.png</image:loc>
-		<image:loc>http://alexhatzenbuhler.com/images/</image:loc>
-		<image:loc>http://alexhatzenbuhler.com/images/</image:loc>
-		<image:loc>http://alexhatzenbuhler.com/images/</image:loc>
-		<image:loc>http://alexhatzenbuhler.com/images/</image:loc>
-		<image:loc>http://alexhatzenbuhler.com/images/</image:loc>
-		<image:loc>http://alexhatzenbuhler.com/images/</image:loc>
-		<image:loc>http://alexhatzenbuhler.com/images/</image:loc>
-		<image:loc>http://alexhatzenbuhler.com/images/</image:loc>
-		<image:loc>http://alexhatzenbuhler.com/images/</image:loc>
-		<image:loc>http://alexhatzenbuhler.com/images/</image:loc>
-		<image:loc>http://alexhatzenbuhler.com/images/</image:loc>
-		<image:loc>http://alexhatzenbuhler.com/images/</image:loc>
-		<image:loc>http://alexhatzenbuhler.com/images/</image:loc>
-		<image:loc>http://alexhatzenbuhler.com/images/</image:loc>
-		<image:loc>http://alexhatzenbuhler.com/images/</image:loc>
-		<image:loc>http://alexhatzenbuhler.com/images/</image:loc>
-		<image:loc>http://alexhatzenbuhler.com/images/</image:loc>
-		<image:loc>http://alexhatzenbuhler.com/images/</image:loc>
-		<image:loc>http://alexhatzenbuhler.com/images/</image:loc>
-	</image:image>
+		<image:loc>http://alexhatzenbuhler.com/images/favicon.ico</image:loc>
+		<image:loc>http://alexhatzenbuhler.com/images/fileDownload.png
+		</image:loc>
+		<image:loc>http://alexhatzenbuhler.com/images/profile.png</image:loc>
 
+		<image:loc>
+			http://alexhatzenbuhler.com/images/wallpapers_small/windmill.png
+		</image:loc>
 
-
+		<image:loc>
+			http://alexhatzenbuhler.com/images/wallpapers_large/3dsquares.png
+		</image:loc>
+		<image:loc>
+			http://alexhatzenbuhler.com/images/wallpapers_large/bullseye.png
+		</image:loc>
+		<image:loc>
+			http://alexhatzenbuhler.com/images/wallpapers_large/city.png
+		</image:loc>
+		<image:loc>
+			http://alexhatzenbuhler.com/images/wallpapers_large/earth.png
+		</image:loc>
+		<image:loc>
+			http://alexhatzenbuhler.com/images/wallpapers_large/giraffe.png
+		</image:loc>
+		<image:loc>
+			http://alexhatzenbuhler.com/images/wallpapers_large/retrotv.png
+		</image:loc>
+		<image:loc>
+			http://alexhatzenbuhler.com/images/wallpapers_large/sky.png
+		</image:loc>
+		<image:loc>
+			http://alexhatzenbuhler.com/images/wallpapers_large/snow.png
+		</image:loc>
+		<image:loc>
+			http://alexhatzenbuhler.com/images/wallpapers_large/windmill.png
+		</image:loc>
+		<image:loc>
+			http://alexhatzenbuhler.com/images/wallpapers_small/3dsquares.png
+		</image:loc>
+		<image:loc>
+			http://alexhatzenbuhler.com/images/wallpapers_small/bullseye.png
+		</image:loc>
+		<image:loc>
+			http://alexhatzenbuhler.com/images/wallpapers_small/city.png
+		</image:loc>
+		<image:loc>
+			http://alexhatzenbuhler.com/images/wallpapers_small/earth.png
+		</image:loc>
+		<image:loc>
+			http://alexhatzenbuhler.com/images/wallpapers_small/giraffe.png
+		</image:loc>
+		<image:loc>
+			http://alexhatzenbuhler.com/images/wallpapers_small/retrotv.png
+		</image:loc>
+		<image:loc>
+			http://alexhatzenbuhler.com/images/wallpapers_small/sky.png
+		</image:loc>
+		<image:loc>
+			http://alexhatzenbuhler.com/images/wallpapers_small/snow.png
+		</image:loc>
+		<image:loc>
+			http://alexhatzenbuhler.com/images/wallpapers_small/windmill.png
+		</image:loc>
   </url>
 </urlset>
