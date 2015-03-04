@@ -6,7 +6,9 @@
     <loc>http://alexhatzenbuhler.com/</loc>
     <loc>http://alexhatzenbuhler.com/index.html</loc>
     <loc>http://alexhatzenbuhler.com/coolstuff.html</loc>
-    <loc>http://alexhatzenbuhler.com/documents/Resume%20-%20Alex%20Hatzenbuhler.pdf</loc>
+    <loc>
+    	http://alexhatzenbuhler.com/documents/Resume%20-%20Alex%20Hatzenbuhler.pdf
+    </loc>
     <loc>http://alexhatzenbuhler.com/fullscreen/3dsquares.html</loc>
     <loc>http://alexhatzenbuhler.com/fullscreen/bullseye.html</loc>
     <loc>http://alexhatzenbuhler.com/fullscreen/city.html</loc>
@@ -21,14 +23,25 @@
 		<image:loc>http://alexhatzenbuhler.com/images/arrowBack.png</image:loc>
 		<image:loc>http://alexhatzenbuhler.com/images/arrowUp.png</image:loc>
 		<image:loc>http://alexhatzenbuhler.com/images/favicon.ico</image:loc>
-		<image:loc>http://alexhatzenbuhler.com/images/fileDownload.png
+		<image:loc>
+			http://alexhatzenbuhler.com/images/fileDownload.png
 		</image:loc>
 		<image:loc>http://alexhatzenbuhler.com/images/profile.png</image:loc>
-
 		<image:loc>
-			http://alexhatzenbuhler.com/images/wallpapers_small/windmill.png
+			http://alexhatzenbuhler.com/images/connect/facebook.png
 		</image:loc>
-
+		<image:loc>
+			http://alexhatzenbuhler.com/images/connect/gmail.png
+		</image:loc>
+		<image:loc>
+			http://alexhatzenbuhler.com/images/connect/googleplus.png
+		</image:loc>
+		<image:loc>
+			http://alexhatzenbuhler.com/images/connect/linkedin.png
+		</image:loc>
+		<image:loc>
+			http://alexhatzenbuhler.com/images/connect/twitter.png
+		</image:loc>
 		<image:loc>
 			http://alexhatzenbuhler.com/images/wallpapers_large/3dsquares.png
 		</image:loc>
@@ -83,5 +96,6 @@
 		<image:loc>
 			http://alexhatzenbuhler.com/images/wallpapers_small/windmill.png
 		</image:loc>
+	</image:image>
   </url>
 </urlset>
