@@ -20,10 +20,10 @@ nav{top:290px}
 }
 @media (max-width: 480px) and (min-width: 374px) {
 nav{top:290px}
-#navUl a{font-size:.75em}
+#navUl a{font-size:.9em}
 #navUl a:hover{opacity:1;font-size:.75em}
 }
-@media only screen and (max-device-width: 480px) {
+@media only screen and (max-device-width: 412px) {
 .aboutMe_ p{margin:10px 20px}
 .aboutMe_,.connect_,.resume_,.projects_,.wallpapers_{width:100%;padding:0}
 .connect_ ul{width:100%}
