@@ -103,7 +103,7 @@
 		• profile picture and h1 are larger
 	*/
 
-@media only screen and (max-device-width: 480px) {
+@media only screen and (max-device-width: 412px) {
 	.aboutMe_ p {
 		margin: 10px 20px 10px;
 	}
