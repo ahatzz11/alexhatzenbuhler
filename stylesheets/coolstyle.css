@@ -4,7 +4,7 @@ body {
 	width: 100%;
 	height: 100%;
 	margin: 0;
-	padding: 0;
+	padding: 0px;
 }
 
 /* this is to correct for the default div rules so wallpapers is uniform */
