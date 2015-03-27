@@ -12,6 +12,10 @@
 	border-radius: 10px;
 }
 
+.about_me {
+	text-align: left;
+}
+
 body {
 	font-family: "Lato", sans-serif;
 	text-align: center;
