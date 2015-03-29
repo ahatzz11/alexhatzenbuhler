@@ -266,6 +266,8 @@ nav ul li {
 p {
 	font-weight: 400;
 	font-size: 1em;
+	line-height: 1.2em;
+	text-align: left;
 }
 
 /* main profile picture */
@@ -317,6 +319,7 @@ ul {
 /* moves all bullet points left */
 ul li {
 	text-align: left;
+	line-height: 1.4em;
 }
 
 /* ************************************************************ */
@@ -331,15 +334,15 @@ ul li {
 }
 
 a.after:after{
-  bottom:-0.25em;
+    bottom:-0.25em;
 }
 
 a.first:after{
-  left:0;
+    left:0;
 }
 
 a.before:hover:before,a.after:hover:after{
-  width:100%;
+    width:100%;
 }
 
 a,a:visited,a:hover,a:active{
