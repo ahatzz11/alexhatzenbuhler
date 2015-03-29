@@ -1,5 +1,6 @@
 .aboutMe_,.connect_{background-color:#fff}
 .aboutMe_,.connect_,.resume_,.projects_{text-align:center;margin:0 auto;padding:0;width:70%;border-radius:10px}
+.about_me{text-align:left}
 body{font-family:"Lato",sans-serif;text-align:center;width:100%;height:100%;margin:0;padding:0}
 .bubble{position:fixed;left:24px;bottom:24px;width:40px;height:40px;border-radius:20px;background-color:#388e3c;opacity:.03}
 .connect_ ul{margin:auto;padding:20px 0 0;text-align:center}
@@ -36,7 +37,7 @@ nav ul li{display:inline-block;list-style-type:none;padding-right:3%;padding-lef
 #navUl{margin:0;padding:0;width:100%;box-shadow:0 4px 8px rgba(0,0,0,.28),0 0 4px rgba(0,0,0,.14)}
 #navUl a{color:#fff;opacity:.75;font-size:1em}
 #navUl a:hover{opacity:1}
-p{font-weight:400;font-size:1em}
+p{font-weight:400;font-size:1em;line-height:1.2em;text-align:left}
 .profile{width:100px;height:100px;border-radius:50px;text-align:center;padding:0;margin:0}
 section{background-color:#ececec;border-radius:10px;margin:0 auto 30px;padding:10px 13px 15px}
 small{font-size:.5em;opacity:.5}
@@ -44,7 +45,7 @@ time{font-style:italic;font-size:smaller;font-weight:400}
 .time{font-style:italic;font-size:smaller;font-weight:400}
 .timeBreak{display:none}
 ul{margin-top:0;margin-bottom:0}
-ul li{text-align:left}
+ul li{text-align:left;line-height:1.4em}
 .resumeDownload{background-color:#fff;text-align:right;padding:10px 0 0;width:100%}
 a.after:after{bottom:-.25em}
 a.first:after{left:0}
