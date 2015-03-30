@@ -1,0 +1,188 @@
+h1 {
+	text-decoration: underline;
+}
+
+a.after:after{
+    bottom:-0.25em;
+}
+
+a.first:after{
+    left:0;
+}
+
+a.before:hover:before,a.after:hover:after{
+    width:100%;
+}
+
+a,a:visited,a:hover,a:active{
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+	position: relative;
+    transition: .6s color ease;
+	text-decoration: none;
+	color: #000000;
+	font-size: 1em;
+}
+
+a:hover{
+	color: #1976d2;
+}
+
+a.before:before,a.after:after{
+    content: "";
+    transition: .6s all ease;
+    -webkit-backface-visibility: hidden;
+            backface-visibility:hidden;
+    position: absolute;
+}
+
+a.before:before{
+    top: -0.25em;
+    border-radius: 10px;
+}
+
+a.after:after{
+    bottom: -0.25em;
+    border-radius: 10px;
+}
+
+a.before:before,a.after:after{
+    height: 5px;
+    height: 0.2rem;
+    width: 0;
+    background: #1976d2;
+}
+
+.square{
+    box-sizing:border-box;
+    text-align: left;
+    position: relative;
+    font-size: 1em;
+    overflow: hidden;
+}
+
+.square a{
+    position:static;
+    text-align: left;
+    font-size: 100%;
+    padding: 0.2em 0.4em;
+}
+
+.square:before,.square:after{
+  	content: "";
+	box-sizing: border-box;
+	transition: .6s all ease;
+	-webkit-backface-visibility: hidden;
+	        backface-visibility: hidden;
+	position: absolute;
+	width: 5px;
+	width: 0.2rem;
+	height: 0;
+	background: #1976d2;
+}
+
+.square:before{
+	left: 0;
+	border-radius: 10px;
+	bottom: -0.2em;
+}
+
+.square:after{
+	right:  0;
+	border-radius: 10px;
+	top:-0.2em;
+}
+
+.square a:before{
+    left: 0;
+    border-radius: 10px;
+    transition: .6s all ease;
+}
+
+.square a:after{
+    right: 0;
+    border-radius: 10px;
+    transition: .6s all ease;
+}
+
+.square:hover:before,.square:hover:after{
+  	height:calc(100% + 0.4em);
+}
+
+.square:hover a:before,.square:hover a:after{
+    width: 100%;
+}
+
+.site a, .site a:visited, .site a:hover, .site a:active{
+  	-webkit-backface-visibility: hidden;
+        	backface-visibility: hidden;
+	position: relative;
+	transition: 0.6s color ease;
+	text-decoration: none;
+}
+
+.site a:hover {
+	color: #1976d2;
+}
+
+.site a.after:after{
+  	content: "";
+  	transition: 0.6s all ease;
+  	-webkit-backface-visibility: hidden;
+        	backface-visibility: hidden;
+  	position: absolute;
+}
+.site a.after:after{
+  	bottom: -0.11em;
+}
+
+.site a.after:after{
+    height: 5px;
+    height: 0.2rem;
+    width: 0;
+    background: #1976d2;
+}
+
+.site a.first:after{
+  	left: 0;
+}
+.site a.after:hover:after{
+  	width: 100%;
+}
+
+.warren a, .warren a:visited, .warren a:hover, .warren a:active{
+  	-webkit-backface-visibility: hidden;
+        	backface-visibility: hidden;
+	position: relative;
+	transition: 0.6s color ease;
+	text-decoration: none;
+}
+
+.warren a:hover {
+	color: #388e3c;
+}
+
+.warren a.after:after{
+  	content: "";
+  	transition: 0.6s all ease;
+  	-webkit-backface-visibility: hidden;
+        	backface-visibility: hidden;
+  	position: absolute;
+}
+.warren a.after:after{
+  	bottom: -0.1em;
+}
+
+.warren a.after:after{
+    height: 5px;
+    height: 0.2rem;
+    width: 0;
+    background: #388e3c;
+}
+
+.warren a.first:after{
+  	left: 0;
+}
+.warren a.after:hover:after{
+  	width: 100%;
+}
