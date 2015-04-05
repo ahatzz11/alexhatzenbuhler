@@ -60,11 +60,7 @@ body {
 	height: 60px;
 }
 
-.connect_ ul li a {
-	color: #1976d2;
-}
-
-.connect_ ul li :hover {
+.connect_ ul li a:hover, .connect_ ul li a:focus {
 	opacity: 0.95;
 }
 
