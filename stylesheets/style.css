@@ -65,31 +65,26 @@ body {
 }
 
 .facebook:hover, .facebook:focus {
-	opacity: 0.9;
 	border-radius: 4px;
 	background-color: #4c84fb;
 }
 
 .googleplus:hover, .googleplus:focus {
-	opacity: 0.9;
 	border-radius: 4px;
 	background-color: #f84d39;
 }
 
 .twitter:hover, .twitter:focus {
-	opacity: 0.9;
 	border-radius: 4px;
 	background-color: #26b0e1;
 }
 
 .linkedin:hover, .linkedin:focus {
-	opacity: 0.9;
 	border-radius: 4px;
 	background-color: #319dd5;
 }
 
 .gmail:hover, .gmail:focus {
-	opacity: 0.9;
 	border-radius: 4px;
 	background-color: #f0f0f0;
 }
