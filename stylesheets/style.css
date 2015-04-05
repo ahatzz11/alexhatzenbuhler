@@ -138,7 +138,7 @@ div {
 	padding: 7px 10px 10px;
 }
 
-.faicon:hover {
+.faicon:hover, .faicon:focus {
 	font-size: 56px;
 	color: #1976d2;
 }
