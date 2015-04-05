@@ -1,4 +1,8 @@
 /* blank since there is no background */
+a {
+	text-decoration: none;
+}
+
 .aboutMe_, .connect_ {
 	background-color: #fff;
 }
