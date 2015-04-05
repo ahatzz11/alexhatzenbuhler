@@ -55,13 +55,43 @@ body {
 	height: 60px;
 }
 
-.connect_ ul li a img {
+.connect_ ul li img, .connect_ ul li i {
 	width: 60px;
 	height: 60px;
 }
 
-.connect_ ul li a:hover, .connect_ ul li a:focus {
-	opacity: 0.95;
+.connect_ ul li img:hover, .connect_ ul li img:focus {
+	border-radius: 4px;
+}
+
+.facebook:hover, .facebook:focus {
+	opacity: 0.9;
+	border-radius: 4px;
+	background-color: #4c84fb;
+}
+
+.googleplus:hover, .googleplus:focus {
+	opacity: 0.9;
+	border-radius: 4px;
+	background-color: #f84d39;
+}
+
+.twitter:hover, .twitter:focus {
+	opacity: 0.9;
+	border-radius: 4px;
+	background-color: #26b0e1;
+}
+
+.linkedin:hover, .linkedin:focus {
+	opacity: 0.9;
+	border-radius: 4px;
+	background-color: #319dd5;
+}
+
+.gmail:hover, .gmail:focus {
+	opacity: 0.9;
+	border-radius: 4px;
+	background-color: #f0f0f0;
 }
 
 /* this is to correct for the default div rules so resume is uniform */
@@ -86,7 +116,7 @@ div {
 
 #fabID:hover {
 	display: block;
-	box-shadow: 0 0 6px rgba(0,0,0,.16),0 6px 12px rgba(0,0,0,.32);
+	box-shadow: 0 0 6px rgba(0,0,0,.16),0 6px 12px rgba(0,0,0,.32);15 20
 }
 
 .fab img {
@@ -261,7 +291,7 @@ nav ul li {
 	font-size: 1em;
 }
 
-#navUl a:hover {
+#navUl a:hover, #navUl a:focus {
 	opacity: 1.0;
 }
 
@@ -504,6 +534,7 @@ ul li {
         	backface-visibility: hidden;
   	position: absolute;
 }
+
 .warren a.after:after {
   	bottom: -0.1em;
 }
