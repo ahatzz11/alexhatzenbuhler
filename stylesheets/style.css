@@ -55,38 +55,14 @@ body {
 	height: 60px;
 }
 
-.connect_ ul li img, .connect_ ul li i {
+.connect_ ul li img {
 	width: 60px;
 	height: 60px;
+	border-radius: 30px;
 }
 
 .connect_ ul li img:hover, .connect_ ul li img:focus {
-	border-radius: 4px;
-}
-
-.facebook:hover, .facebook:focus {
-	border-radius: 4px;
-	background-color: #4c84fb;
-}
-
-.googleplus:hover, .googleplus:focus {
-	border-radius: 4px;
-	background-color: #f84d39;
-}
-
-.twitter:hover, .twitter:focus {
-	border-radius: 4px;
-	background-color: #26b0e1;
-}
-
-.linkedin:hover, .linkedin:focus {
-	border-radius: 4px;
-	background-color: #319dd5;
-}
-
-.gmail:hover, .gmail:focus {
-	border-radius: 4px;
-	background-color: #f0f0f0;
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
 /* this is to correct for the default div rules so resume is uniform */
