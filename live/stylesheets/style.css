@@ -1,20 +1,20 @@
+a{text-decoration:none}
 .aboutMe_,.connect_{background-color:#fff}
 .aboutMe_,.connect_,.resume_,.projects_{text-align:center;margin:0 auto;padding:0;width:70%;border-radius:10px}
 .about_me{text-align:left}
 body{font-family:"Lato",sans-serif;text-align:center;width:100%;height:100%;margin:0;padding:0}
 .bubble{position:fixed;left:24px;bottom:24px;width:40px;height:40px;border-radius:20px;background-color:#388e3c;opacity:.03}
 .connect_ ul{margin:auto;padding:20px 0 0;text-align:center}
-.connect_ ul li{display:inline;list-style-type:none;padding:0 5%}
-.connect_ ul li a img{width:60px;height:60px}
-.connect_ ul li a{color:#1976d2}
-.connect_ ul li :hover{opacity:.95}
+.connect_ ul li{display:inline;list-style-type:none;padding:0 5%;width:60px;height:60px}
+.connect_ ul li img{width:60px;height:60px;border-radius:30px}
+.connect_ ul li img:hover,.connect_ ul li img:focus{box-shadow:0 3px 6px rgba(0,0,0,0.16),0 3px 6px rgba(0,0,0,0.23)}
 div{width:100%;margin:0 auto}
 #fabID{-webkit-transform:translateZ(0);display:none;position:fixed;right:24px;bottom:24px;background:#43a047;width:56px;height:56px;border-radius:28px;box-shadow:0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28)}
 #fabID:hover{display:block;box-shadow:0 0 6px rgba(0,0,0,.16),0 6px 12px rgba(0,0,0,.32)}
 .fab img{width:24px;height:24px;padding:16px}
 .fab img:hover{opacity:1}
 .faicon{float:right;font-size:56px;color:#000;margin-left:210px;padding:7px 10px 10px}
-.faicon:hover{font-size:56px;color:#1976d2}
+.faicon:hover,.faicon:focus{font-size:56px;color:#1976d2}
 footer{padding:50px 0 25px}
 footer .copyright{font-size:small;color:#bdbdbd}
 footer .copyright a{font-size:small;color:#bdbdbd}
@@ -36,7 +36,7 @@ nav{position:absolute;background-color:#1976d2;font-size:1.3em;line-height:56px;
 nav ul li{display:inline-block;list-style-type:none;padding-right:3%;padding-left:3%}
 #navUl{margin:0;padding:0;width:100%;box-shadow:0 4px 8px rgba(0,0,0,.28),0 0 4px rgba(0,0,0,.14)}
 #navUl a{color:#fff;opacity:.75;font-size:1em}
-#navUl a:hover{opacity:1}
+#navUl a:hover,#navUl a:focus{opacity:1}
 p{font-weight:400;font-size:1em;line-height:1.2em;text-align:left}
 .profile{width:100px;height:100px;border-radius:50px;text-align:center;padding:0;margin:0}
 section{background-color:#ececec;border-radius:10px;margin:0 auto 30px;padding:10px 13px 15px}
@@ -47,17 +47,17 @@ time{font-style:italic;font-size:smaller;font-weight:400}
 ul{margin-top:0;margin-bottom:0}
 ul li{text-align:left;line-height:1.4em}
 .resumeDownload{background-color:#fff;text-align:right;padding:10px 0 0;width:100%}
-a.after:after{bottom:-.25em}
-a.first:after{left:0}
-a.before:hover:before,a.after:hover:after{width:100%}
-a,a:visited,a:hover,a:active{-webkit-backface-visibility:hidden;backface-visibility:hidden;position:relative;transition:.6s color ease;text-decoration:none;color:#000;font-size:1em}
-a:hover{color:#1976d2}
-a.before:before,a.after:after{content:"";transition:.6s all ease;-webkit-backface-visibility:hidden;backface-visibility:hidden;position:absolute}
-a.before:before{top:-.25em;border-radius:10px}
-a.after:after{bottom:-.25em;border-radius:10px}
-a.before:before,a.after:after{height:5px;height:.2rem;width:0;background:#1976d2}
+.link a.after:after{bottom:-.25em}
+.link a.first:after{left:0}
+.link a.before:hover:before,.link a.after:hover:after{width:100%}
+.link a,.link a:visited,.link a:hover,.link a:active{-webkit-backface-visibility:hidden;backface-visibility:hidden;position:relative;transition:.6s color ease;text-decoration:none;color:#000;font-size:1em}
+.link a:hover{color:#1976d2}
+.link a.before:before,.link a.after:after{content:"";transition:.6s all ease;-webkit-backface-visibility:hidden;backface-visibility:hidden;position:absolute}
+.link a.before:before{top:-.25em;border-radius:10px}
+.link a.after:after{bottom:-.25em;border-radius:10px}
+.link a.before:before,.link a.after:after{height:5px;height:.2rem;width:0;background:#1976d2}
 .square{box-sizing:border-box;text-align:left;position:relative;font-size:1em;overflow:hidden}
-.square a{position:static;text-align:left;font-size:100%;padding:.2em .4em}
+.square a{position:static!important;text-align:left;font-size:100%!important;padding:.2em .4em}
 .square:before,.square:after{content:"";box-sizing:border-box;transition:.6s all ease;-webkit-backface-visibility:hidden;backface-visibility:hidden;position:absolute;width:5px;width:.2rem;height:0;background:#1976d2}
 .square:before{left:0;border-radius:10px;bottom:-.2em}
 .square:after{right:0;border-radius:10px;top:-.2em}
