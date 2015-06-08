@@ -144,7 +144,8 @@
 	/* headings */
 	h1 {
 		font-size: 3.3em;
-
+		margin-top: -15px;
+		padding-bottom: 5px;
 	}
 
 	h2 {
