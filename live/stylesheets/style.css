@@ -23,7 +23,7 @@ h2{font-size:4em;font-weight:400;line-height:1em;text-align:center;margin:0;padd
 h3{font-size:2em;text-align:left;margin:0;line-height:1}
 h4{font-size:1.1em;margin:0;text-align:left;padding-top:10px}
 h5{display:block;color:#424242;text-align:left;margin-top:0;margin-bottom:0;font-style:italic}
-.headerBlock{position:relative;z-index:7;width:100%;background-color:#1976d2;margin:0 0 70px;padding:75px 0 27px;text-align:center}
+.headerBlock{position:relative;z-index:7;width:100%;background-color:#1976d2;margin:0 0 70px;padding:60px 0 42px;text-align:center}
 .involvement ul,.langTech ul,.projects_ section ul{padding-top:10px}
 .ivnTech{margin-bottom:0;padding-bottom:5px}
 .konami{font-family:"Dosis",sans-serif;list-style-type:none;opacity:.1;text-align:center}
@@ -38,7 +38,7 @@ nav ul li{display:inline-block;list-style-type:none;padding-right:3%;padding-lef
 #navUl a{color:#fff;opacity:.75;font-size:1em}
 #navUl a:hover,#navUl a:focus{opacity:1}
 p{font-weight:400;font-size:1em;line-height:1.2em;text-align:left}
-.profile{width:100px;height:100px;border-radius:50px;text-align:center;padding:0;margin:0}
+.profile{width:120px;height:120px;border-radius:60px;text-align:center;padding:0;margin:0}
 section{background-color:#ececec;border-radius:10px;margin:0 auto 30px;padding:10px 13px 15px}
 small{font-size:.5em;opacity:.5}
 time{font-style:italic;font-size:smaller;font-weight:400}
