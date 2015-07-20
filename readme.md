@@ -6,6 +6,7 @@ This is the personal website for Alex Hatzenbuhler! Live at [alexhatzenbuhler.co
 Contents
 -
 
+	index.html
 	coolstuff.html
 
 	documents
@@ -28,8 +29,6 @@ Contents
 		|-- connect icons
 		|-- thumbnails
 		|-- full resolution images
-
-	index.html
 
 	javascript
 		|-- greeneggs.js
