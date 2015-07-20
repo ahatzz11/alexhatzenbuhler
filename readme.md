@@ -1,4 +1,3 @@
-<h3>author: Alex Hatzenbuhler</h3>
 <h6>url: http://alexhatzenbuhler.com</h6>
 
 ----------contents----------
