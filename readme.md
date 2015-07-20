@@ -1,6 +1,10 @@
-<h6>url: http://alexhatzenbuhler.com</h6>
+alexhatzenbuhler.com
+===
 
-----------contents----------
+This is the personal website for Alex Hatzenbuhler! Live at [alexhatzenbuhler.com](http://alexhatzenbuhler.com)
+
+Contents
+-
 
 	coolstuff.html
 
