@@ -1,338 +1,47 @@
-body {
-	font-family: "Lato", sans-serif;
-	text-align: center;
-	width: 100%;
-	height: 100%;
-	margin: 0;
-	padding: 0;
-}
-
-/* this is to correct for the default div rules so wallpapers is uniform */
-div {
-	width: 100%;
-	margin: 0 auto 0;
-}
-
-/* footer is for the bottom name and the link */
-footer {
-	padding: 50px 0 25px;
-}
-
-footer .copyright {
-	font-size: small;
-	color: #bdbdbd;
-}
-
-footer .copyright a {
-	font-size: small;
-	color: #bdbdbd;
-}
-
-/* headings */
-h1 {
-	font-family: "Roboto", sans-serif;
-	font-size: 6em;
-	font-weight: 100;
-	line-height: 1.2;
-	color: white;
-	text-align: center;
-	padding: 30px 0 0 0;
-	margin: 0 0 0 0;
-}
-
-h2 {
-	font-size: 4em;
-	font-weight: 400;
-	line-height: 1em;
-	text-align: center;
-	margin: 0;
-	padding: 60px 0 10px;
-}
-
-h3 {
-	font-size: 2em;
-	text-align: left;
-	margin: 0;
-	line-height: 1;
-}
-
-h4 {
-	font-size: 1.1em;
-	margin: 0;
-	text-align: left;
-	padding-top: 10px;
-}
-
-h5 {
-	display: block;
-	color: #424242;
-	text-align: left;
-	margin-top: 0;
-	margin-bottom: 0;
-	font-style: italic;
-
-}
-
-/* the top colored block - green */
-.headerBlock {
-	position: relative;
-	z-index: 7;
-	width: 100%;
-	background-color: #388e3c;
-	margin: 0 0 70px;
-	padding: 75px 0 27px 0px;		/* 27 to make header exactly 350px */
-	text-align: center;
-}
-
-/* icon is for the back icon */
-.icon {
-	cursor: pointer;
-	width: 24px;
-	height: 24px;
-	background-position: center center;
-	padding: 2px;
-	opacity: 0.75;
-}
-
-.icon:hover {
-	opacity: 1.0;
-}
-
-.iconBackground {
-	position: fixed;
-	-webkit-transform: translateZ(0);		/* fixes static issues on chrome/windows */
-	z-index: 20;
-	top: 14px;
-	left: 18px;
-	border-radius: 14px;
-	width: 28px;
-	height: 28px;
-}
-
-.iconBackground:active {
-	background: #2e7d32;
-}
-
-/* mobile menu button - currently unused*/
-#menu {
-	display: none;
-}
-
-/* nav - navUl is for styling the nav bar and nav elements */
-nav {
-	-webkit-transform: translateZ(0);		/* fixes static issues on chrome/windows */
-	position: absolute;
-	background-color: #388e3c;
-	font-size: 1.3em;
-	line-height: 56px;
-	top: 350px;
-	z-index: 2;
-	width: 100%;
-}
-
-nav ul li {
-	color: white;
-	display: inline-block;
-	list-style-type: none;
-	padding-right: 3%;
-	padding-left: 3%;
-	opacity: 0.75;
-}
-
-nav ul li:hover {
-	opacity: 1.0;
-}
-
-#navUl {
-	margin: 0 0 0 0;
-	padding: 0 0 0 0;
-	width: 100%;
-	box-shadow: 0 4px 8px rgba(0,0,0,.28), 0 0 4px rgba(0,0,0,.14);
-}
-
-p {
-	font-weight: 400;
-	font-size: 1em;
-}
-
-/* thumbnails for wallpapers */
-.pictureSmall {
-	width: 100%;
-	border-radius: 10px;
-	opacity: 1.0;
-}
-
-.pictureSmall:hover {
-	opacity: 0.95;
-	background-color: white;
-	box-shadow: 0 2px 4px rgba(0,0,0,.28), 0 0 2px rgba(0,0,0,.14);
-}
-
-/* main profile picture */
-.profile {
-	width: 100px;
-	height: 100px;
-	border-radius: 50px;
-	text-align: center;
-	padding: 0;
-	margin: 0;
-}
-
-/* each main section, wallpapers, etc. */
-section {
-	background-color: #ececec;
-	border-radius: 10px;
-	margin: 0 auto 30px;
-	padding: 10px 13px 15px;		/* 13 to account for line height on headings */
-}
-
-/* padding around wallpaper table */
-table {
-	padding: 3px;
-	margin: auto;
-}
-
-table td {
-	padding: 3px;
-}
-
-/* has dates on the next line for mobile */
-.timeBreak {
-	display: none;
-}
-
-ul {
-	margin-top: 0;
-	margin-bottom: 0;
-}
-
-/* moves all bullet points left */
-ul li {
-	text-align: left;
-}
-
-/* wallpaper adjustment */
-.wallpapers_  {
-	text-align: center;
-	margin: 0 auto 0;
-	padding: 0;
-	width: 70%;
-	border-radius: 10px;
-}
-
-.wallpapers_ {
-	margin-top: 0;
-	margin-bottom: 30px;
-}
-
-
-
-
-
-/* ************************************************************ */
-
-/* The following is for the active resume link */
-/* Created by Brenden Palmer: http://codepen.io/brenden/pen/RNZXqx */
-.resumeDownload {
-	background-color: #fff;
-	text-align: right;
-	padding: 10px 0 0 0;
-	width: 100%;
-}
-
-a,a:visited,a:hover,a:active{
-    -webkit-backface-visibility: hidden;
-            backface-visibility: hidden;
-	position: relative;
-    transition: .25s color ease;
-	text-decoration: none;
-	color: #000000;
-	font-size: 1em;
-}
-
-a:hover{
-	color: #689f38;
-}
-
-a.before:before,a.after:after{
-    content: "";
-    transition: .25s all ease;
-    -webkit-backface-visibility: hidden;
-            backface-visibility:hidden;
-    position: absolute;
-}
-
-a.before:before{
-    top: -0.25em;
-}
-
-a.after:after{
-    bottom: -0.25em;
-}
-
-a.before:before,a.after:after{
-    height: 5px;
-    height: 0.2rem;
-    width: 0;
-    background: #689f38;
-}
-
-.square{
-    box-sizing:border-box;
-    text-align: left;
-    position: relative;
-    font-size: 1em;
-    overflow: hidden;
-}
-
-.square a{
-    position:static;
-    text-align: left;
-    font-size: 100%;
-    padding: 0.2em 0.4em;
-}
-
-.square:before,.square:after{
-  	content: "";
-	box-sizing: border-box;
-	transition: .8s all ease;
-	-webkit-backface-visibility: hidden;
-	        backface-visibility: hidden;
-	position: absolute;
-	width: 5px;
-	width: 0.2rem;
-	height: 0;
-	background: #689f38;
-}
-
-.square:before{
-	left: 0;
-	border-radius: 10px;
-	bottom: -0.2em;
-}
-
-.square:after{
-	right:  0;
-	border-radius: 10px;
-	top:-0.2em;
-}
-
-.square a:before{
-    left: 0;
-    border-radius: 10px;
-    transition: .6s all ease;
-}
-
-.square a:after{
-    right: 0;
-    border-radius: 10px;
-    transition: .6s all ease;
-}
-
-.square:hover:before,.square:hover:after{
-  	height:calc(100% + 0.4em);
-}
-
-.square:hover a:before,.square:hover a:after{
-    width: 100%;
-}
+body{font-family:"Lato",sans-serif;text-align:center;width:100%;height:100%;margin:0;padding:0}
+div{width:100%;margin:0 auto}
+footer{padding:50px 0 25px}
+footer .copyright{font-size:small;color:#bdbdbd}
+footer .copyright a{font-size:small;color:#bdbdbd}
+h1{font-family:"Roboto",sans-serif;font-size:6em;font-weight:100;line-height:1.2;color:#fff;text-align:center;padding:30px 0 0;margin:0}
+h2{font-size:4em;font-weight:400;line-height:1em;text-align:center;margin:0;padding:60px 0 10px}
+h3{font-size:2em;text-align:left;margin:0;line-height:1}
+h4{font-size:1.1em;margin:0;text-align:left;padding-top:10px}
+h5{display:block;color:#424242;text-align:left;margin-top:0;margin-bottom:0;font-style:italic}
+.headerBlock{position:relative;z-index:7;width:100%;background-color:#388e3c;margin:0 0 70px;padding:75px 0 27px;text-align:center}
+.icon{cursor:pointer;width:24px;height:24px;background-position:center center;padding:2px;opacity:.75}
+.icon:hover{opacity:1}
+.iconBackground{position:fixed;-webkit-transform:translateZ(0);z-index:20;top:14px;left:18px;border-radius:14px;width:28px;height:28px}
+.iconBackground:active{background:#2e7d32}
+#menu{display:none}
+nav{-webkit-transform:translateZ(0);position:absolute;background-color:#388e3c;font-size:1.3em;line-height:56px;top:350px;z-index:2;width:100%}
+nav ul li{color:#fff;display:inline-block;list-style-type:none;padding-right:3%;padding-left:3%;opacity:.75}
+nav ul li:hover{opacity:1}
+#navUl{margin:0;padding:0;width:100%;box-shadow:0 4px 8px rgba(0,0,0,.28),0 0 4px rgba(0,0,0,.14)}
+p{font-weight:400;font-size:1em}
+.pictureSmall{width:100%;border-radius:10px;opacity:1}
+.pictureSmall:hover{opacity:.95;background-color:#fff;box-shadow:0 2px 4px rgba(0,0,0,.28),0 0 2px rgba(0,0,0,.14)}
+.profile{width:100px;height:100px;border-radius:50px;text-align:center;padding:0;margin:0}
+section{background-color:#ececec;border-radius:10px;margin:0 auto 30px;padding:10px 13px 15px}
+table{padding:3px;margin:auto}
+table td{padding:3px}
+.timeBreak{display:none}
+ul{margin-top:0;margin-bottom:0}
+ul li{text-align:left}
+.wallpapers_{text-align:center;margin:0 auto;padding:0;width:70%;border-radius:10px;margin-top:0;margin-bottom:30px}
+.resumeDownload{background-color:#fff;text-align:right;padding:10px 0 0;width:100%}
+a,a:visited,a:hover,a:active{-webkit-backface-visibility:hidden;backface-visibility:hidden;position:relative;transition:.25s color ease;text-decoration:none;color:#000;font-size:1em}
+a:hover{color:#689f38}
+a.before:before,a.after:after{content:"";transition:.25s all ease;-webkit-backface-visibility:hidden;backface-visibility:hidden;position:absolute}
+a.before:before{top:-.25em}
+a.after:after{bottom:-.25em}
+a.before:before,a.after:after{height:5px;height:.2rem;width:0;background:#689f38}
+.square{box-sizing:border-box;text-align:left;position:relative;font-size:1em;overflow:hidden}
+.square a{position:static;text-align:left;font-size:100%;padding:.2em .4em}
+.square:before,.square:after{content:"";box-sizing:border-box;transition:.8s all ease;-webkit-backface-visibility:hidden;backface-visibility:hidden;position:absolute;width:5px;width:.2rem;height:0;background:#689f38}
+.square:before{left:0;border-radius:10px;bottom:-.2em}
+.square:after{right:0;border-radius:10px;top:-.2em}
+.square a:before{left:0;border-radius:10px;transition:.6s all ease}
+.square a:after{right:0;border-radius:10px;transition:.6s all ease}
+.square:hover:before,.square:hover:after{height:calc(100% + 0.4em)}
+.square:hover a:before,.square:hover a:after{width:100%}

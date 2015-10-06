@@ -1,344 +1,277 @@
 <!DOCTYPE html>
-<!--
-    _   _
-   /_\ | |_____ __
-  / _ \| / -_) \ /
- /_/ \_\_\___/_\_\
-  _  _      _               _         _    _
- | || |__ _| |_ ______ _ _ | |__ _  _| |_ | |___ _ _
- | __ / _` |  _|_ / -_) ' \| '_ \ || | ' \| / -_) '_|
- |_||_\__,_|\__/__\___|_||_|_.__/\_,_|_||_|_\___|_|
-
- -->
 <html>
 <head>
-	<meta charset="utf-8">
-	<title>Alex Hatzenbuhler</title>
-	<meta name="description" content="The personal site for Alex Hatzenbuhler: Freelance Developer. music. games. android. beer." />
-	<meta name="author" content="Alex Hatzenbuhler">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<link rel="stylesheet" href="stylesheets/style.css" type="text/css" />
-	<link rel="stylesheet" href="stylesheets/media.css" type="text/css" />
-	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-	<link href="http://fonts.googleapis.com/css?family=Dosis:800|Lato:400,700|Roboto:100,700" rel="stylesheet" type="text/css" />
-	<link rel="icon" href="images/favicon2.ico" type="image/png" />
-
-	<!-- set the width of the viewport to the device width, for mobile -->
-	<meta name="viewport" content="width=device-width", initial-scale=1 />
-
-	<!-- JAVASCRIPT -->
-	<!-- jquery libraries -->
-    <script src="javascript/jquery/jquery-1.11.2.min.js" type="text/javascript"></script>
-    <script src="javascript/jquery/jquery.localScroll.min.js" type="text/javascript"></script>
-    <script src="javascript/jquery/jquery.scrollTo.min.js" type="text/javascript"></script>
-
-    <!-- navigation bar script -->
-    <script async src="javascript/navigation.js" type="text/javascript"></script>
-
+<meta charset=utf-8>
+<title>Alex Hatzenbuhler</title>
+<meta name=description content="The personal site for Alex Hatzenbuhler: Freelance Developer. music. games. android. beer."/>
+<meta name=author content="Alex Hatzenbuhler">
+<meta http-equiv=X-UA-Compatible content="IE=edge">
+<link rel=stylesheet href="stylesheets/style.css" type="text/css"/>
+<link rel=stylesheet href="stylesheets/media.css" type="text/css"/>
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel=stylesheet>
+<link href="http://fonts.googleapis.com/css?family=Dosis:800|Lato:400,700|Roboto:100,700" rel=stylesheet type="text/css"/>
+<link rel=icon href="images/favicon2.ico" type="image/png"/>
+<meta name=viewport content="width=device-width" , initial-scale=1 />
+<script src="javascript/jquery/jquery-1.11.2.min.js"></script>
+<script src="javascript/jquery/jquery.localScroll.min.js"></script>
+<script src="javascript/jquery/jquery.scrollTo.min.js"></script>
+<script async src="javascript/navigation.js"></script>
 </head>
 <body>
-	<header id="header">
-		<!-- this div is for the for color being on top of the nav bar -->
-		<div class="headerBlock">
-			<a href="index.html"><img class="profile" src="images/profile2.png" alt="Profile Picture"></a>
-			<h1>Alex Hatzenbuhler</h1>
-		</div>
-		<nav id="nav">
-			<!-- div for mobile menu -->
-			<div id="menu">Menu</div>
-			<ul id="navUl">
-				<a href="#aboutMe"><li>About Me</li></a>
-				<a href="#projects"><li>Projects</li></a>
-				<a href="#resume"><li>Resume</li></a>
-				<a href="#connect"><li>Connect</li></a>
-			</ul>
-			<a href="#header">
-				<div id="fabID" class="fab">
-					<img class="icon" src="images/arrowUp.png" alt="Arrow Back"/>
-				</div>
-			</a>
-		</nav>
-	</header>
-	<!-- About Me -->
-	<section id="aboutMe" class="aboutMe_">
-		<h2>About Me</h2>
-		<p>Hi! My name is Alex Hatzenbuhler. I grew up in Apple Valley MN and am currently a Senior at North Dakota State University. I will be graduating in May 2015 with a Bachelors of Science degree in Computer Science. I have been interested in anything related to technology since I was tall enough to reach the VCR machine. I started coding and developing my freshman year of college and I soon became passionate about computer science. Since then I have developed a strong interest in android and web development.</p>
-
-		<p>Outside of my professional interests I listen to a lot of music, discover many unique craft beers, and enjoy staying up to date on all things related to technology. I have developed an interest in some computer hardware as well. I built my own desktop computer a couple years ago, and have helped a few friends with their own. I also enjoy biking, snowboarding, and playing ultimate frisbee in my free time.</p>
-	</section>
-
-	<!-- Projects -->
-	<div id="projects" class="projects_">
-		<h2>Projects</h2>
-		<section class="counter">
-			<h3>Counter for Wear
-				<a class="faicon" href="https://github.com/ahatzz11/Counter-for-Wear">
-					<i class="fa fa-github"></i>
-				</a>
-			</h3>
-			<article>
-				<ul>
-					<li>A counting application for Android Wear</li>
-					<li>Language: Java</li>
-				</ul>
-			</article>
-		</section>
-
-		<section class="hotel">
-			<h3>Hotel System
-				<a class="faicon" href="https://github.com/ahatzz11/Hotel-System">
-					<i class="fa fa-github"></i>
-				</a>
-			</h3>
-			<article>
-				<ul>
-					<li>A parallelized hotel reservation system</li>
-					<li>Parallelization is achieved by the use semaphores</li>
-					<li>Language: C++</li>
-				</ul>
-			</article>
-		</section>
-		<section class="k-means">
-			<h3>k-Means
-				<a class="faicon" href="https://github.com/ahatzz11/k-Means">
-					<i class="fa fa-github"></i>
-				</a>
-			</h3>
-			<article>
-				<ul>
-					<li>Implementation of the k-Means algorithm both in serial, and parallel</li>
-					<li>Language: Python</li>
-				</ul>
-			</article>
-		</section>
-		<section class="pokedex">
-			<h3>PokéDex
-				<a class="faicon" href="https://github.com/ahatzz11/PoxeDex">
-					<i class="fa fa-github"></i>
-				</a>
-			</h3>
-			<article>
-				<ul>
-					<li>The web app and backend database for a pokédex</li>
-					<li>Languages: Java; SQL</li>
-				</ul>
-			</article>
-		</section>
-		<section class="alexHatz">
-			<h3>This Site!
-				<a class="faicon" href="https://github.com/ahatzz11/alexhatzenbuhler">
-					<i class="fa fa-github"></i>
-				</a>
-			</h3>
-			<article class="site">
-				<ul class="link">
-					<li>This site originally started as an assignment for a class I took in college called <i>Intro to Web Design</i>. I decided to continue to add and polish it into what you see today!</li>
-					<li>Languages: HTML5; CSS3; JavaScript; jQuery</li>
-					<li>Interested in some more cool stuff? Enter the <a class="first after" href="http://en.wikipedia.org/wiki/Konami_Code">konami code</a> anywhere on this page. <small> works on mobile too!</small>
-					<li class="konami"><a href="coolstuff.html">
-						<i class="fa fa-arrow-up"></i>
-						<i class="fa fa-arrow-up"></i>
-						<i class="fa fa-arrow-down"></i>
-						<i class="fa fa-arrow-down"></i>
-						<i class="fa fa-arrow-left"></i>
-						<i class="fa fa-arrow-right"></i>
-						<i class="fa fa-arrow-left"></i>
-						<i class="fa fa-arrow-right"></i>
-						<span class="konamiba">B</span>
-						<span class="konamiba">A</span>
-						<small><b> or click if you're lazy</b></small></a>
-					</li>
-				</ul>
-			</article>
-		</section>
-	</div>
-		<!-- Resume -->
-	<div id="resume" class="resume_">
-	<h2>Resume</h2>
-		<section class="education">
-			<h3>Education</h3>
-			<article class="ndsu">
-				<h4>
-					North Dakota State University<span class="timeBreak"><br></span>
-					<time datetime="2011">(2011</time> &ndash;<time datetime="2015">2015)</time>
-				</h4>
-				<h5>Computer Science</h5>
-					<ul>
-						<li>3.35/4.0 Total Cumulative GPA</li>
-						<li>Presidential Honor Scholarship Recipient (Academic Scholarship)</li>
-					</ul>
-			</article>
-			<article class="normandale">
-				<h4>
-					Normandale Community College<span class="timeBreak"><br></span>
-					<time datetime="2010">(2010</time> &ndash;<time datetime="2011">2011)</time>
-				</h4>
-					<ul>
-						<li>Post Secondary Enrollment Option (PSEO) Student</li>
-						<li>3.8/4.0 GPA</li>
-					</ul>
-			</article>
-		</section>
-
-		<section class="workHistory">
-			<h3>Work History</h3>
-				<article class="moolah">
-					<h4>
-						Moolah<span class="timeBreak"><br></span>
-						<time datetime="2014-01">(January 2014</time> &ndash;<time datetime="2014-10">October 2014)</time>
-					</h4>
-					<h5>Head of Customer Service</h5>
-						<ul>
-							<li>Demonstrated leadership by hiring and managing a staff of 4 to provide 24-hour customer support</li>
-							<li>Utilized strong critical thinking by developing a training program on customer supprt for new agents</li>
-							<li>Displayed organizational skills by preparing and managing 750 Bitcoin ($450,000) worth of investments during our public investment rounds</li>
-							<li>Applied previous interpersonal and customer service skills to provide support to clients who experienced problems using Moolah services</li>
-						</ul>
-				</article>
-				<article class="ndsuIts">
-					<h4>
-						NDSU Information Technology Services<span class="timeBreak"><br></span>
-						<time datetime="2013-02">(Febuary 2013</time> &ndash;<time datetime="2014-08">August 2014)</time>
-					</h4>
-						<h5>IVN Technician</h5>
-						<ul class="ivnTech">
-							<li>Utilized technical skills by maintaining and troubleshooting video conference calls between colleges</li>
-						</ul>
-						<h5>Classroom Technician</h5>
-						<ul>
-							<li>Developed problem solving and computer skills by providing technical support for instructors encountering technical issues with computers, projects, and other peripherals</li>
-							<li>Demonstrated flexibility and adaptability by working on many different technical issues throughout the school
-						</ul>
-				</article>
-				<article class="bestBuy">
-					<h4>
-						Best Buy<span class="timeBreak"><br></span>
-						<time datetime="2013-10">(October 2013</time> &ndash;<time datetime="2014-01">January 2014)</time>
-					</h4>
-						<h5>Mobile Sales Speciailist - Seasonal</h5>
-						<ul>
-							<li>Showcased technical knowledge of mobile devices and other electronics by informing customers about products</li>
-							<li>Improved interpersonal skills by dealing with customers to offer exceptional service</li>
-						</ul>
-				</article>
-				<article class="nickelodeonUniverse">
-					<h4>
-						Nickelodeon Universe<span class="timeBreak"><br></span>
-						<time datetime="2012-06">(June 2012</time> &ndash;<time datetime="2014-02">February 2014)</time>
-					</h4>
-						<h5>Ride Operator</h5>
-						<ul>
-							<li>Demonstrated responsibility by ensuring the safety of guests as they move throughout the park and go on rides</li>
-						</ul>
-				</article>
-				<article class="warren link">
-					<h4>
-						<a class="first after" href="http://www.ymcatwincities.org/camps/camp_warren/">YMCA Camp Warren</a><span class="timeBreak"><br></span>
-						<time datetime="2010-06">(June 2010</time> &ndash;<time datetime="2010-08">August 2010)</time>
-					</h4>
-						<h5>Summer Camp Counselor</h5>
-						<ul>
-							<li>Showcased flexibility and adaptability as a cabin leader for 10-12 children, ages 8-13, in two week intervals</li>
-							<li>Improved interpersonal and leadership skills by co-leading camp activities and guiding newer staff</li>
-						</ul>
-				</article>
-		</section>
-
-		<section class="involvement">
-			<h3>Involvement</h3>
-				<ul>
-					<li>ACM (Association for Computing Machinery), Member <time datetime="2012">(2012</time> &ndash;<span class="time">Present)</span></li>
-					<li>Eagle Scout awarded in June 2007 by Boy Scouts of America Troop 293 in Apple Valley, MN</li>
-				</ul>
-		</section>
-
-		<section class="langTech">
-			<h3>Languages and Technologies</h3>
-				<ul>
-					<li>Java; C; C++; C#; HTML5; CSS3; XML; SQL</li>
-					<li>Visual Studio; Eclipse; Netbeans; Android Studio; SVN; Git</li>
-				</ul>
-		</section>
-
-		<div class="resumeDownload">
-			<span class="square link">
-				<a class="before after" href="documents/Resume%20-%20Alex%20Hatzenbuhler.pdf">download a copy of my resume as a pdf</a>
-			</span>
-		</div>
-	</div>
-
-	<!-- Connect -->
-	<section id="connect" class="connect_">
-	<h2>Connect</h2>
-		<ul>
-			<li>
-				<a href="https://www.facebook.com/alex.hatzz11" title="Go to my Facebook">
-				<img src="images/connect/facebook.png" alt="Facebook Icon"/></a>
-			</li>
-			<li>
-				<a href="https://plus.google.com/u/0/+AlexHatzenbuhler" title="Go to my Google+">
-				<img src="images/connect/googleplus.png" alt="Google Plus Icon"/></a>
-			</li>
-			<li>
-				<a href="http://twitter.com/ahatzz11" title="Go to my Twitter">
-				<img src="images/connect/twitter.png" alt="Twitter Icon"/></a>
-			</li>
-			<li>
-				<a href="https://www.linkedin.com/in/alexhatzenbuhler" title="Go to my LinkedIn">
-				<img src="images/connect/linkedin.png" alt="Linkedin Icon"/></a>
-			</li>
-			<li>
-				<a href="mailto:alex.hatzz11@gmail.com" title="Send me an email" target="_blank">
-				<img src="images/connect/gmail.png" alt="Gmail Icon"/></a>
-			</li>
-		</ul>
-	</section>
-
-	<footer id="foot">
-		<span class="copyright">Designed by
-			<a href="index.html">Alex Hatzenbuhler</a>
-		</span>
-		<a href="coolstuff.html">
-			<div class="bubble"></div>
-		</a>
-
-	</footer>
-
-	<!-- scrolling script -->
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('#nav').localScroll({
-                target:'body',
-                duration: 800,
-                });
-        });
-    </script>
-    <!-- end scrolling script -->
-    <!-- JAVASCIPT -->
-
-	<!-- green eggs and ham -->
-    <script async src="javascript/greeneggs.js" type="text/javascript"></script>
-    <script type="text/javascript">
-		window.onload = function() {
-			function openCool() {
-				window.open("coolstuff.html", "_self")
-			}
-			var ham = new Ham(openCool);
-		};
-	</script>
-	<!-- end green eggs and ham -->
-
-	<!--google analytics script-->
-	<script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-        ga('create', 'UA-59764162-1', 'auto');
-        ga('send', 'pageview');
-
-	</script>
-	<!--end analytics script-->
+<header id=header>
+<div class=headerBlock>
+<a href=index.html><img class=profile src="images/profile2.png" alt="Profile Picture"></a>
+<h1>Alex Hatzenbuhler</h1>
+</div>
+<nav id=nav>
+<div id=menu>Menu</div>
+<ul id=navUl>
+<a href="#aboutMe"><li>About Me</li></a>
+<a href="#projects"><li>Projects</li></a>
+<a href="#resume"><li>Resume</li></a>
+<a href="#connect"><li>Connect</li></a>
+</ul>
+<a href="#header">
+<div id=fabID class=fab>
+<img class=icon src="images/arrowUp.png" alt="Arrow Back"/>
+</div>
+</a>
+</nav>
+</header>
+<section id=aboutMe class=aboutMe_>
+<h2>About Me</h2>
+<p>Hi! My name is Alex Hatzenbuhler. I grew up in Apple Valley MN and am currently a Senior at North Dakota State University. I will be graduating in May 2015 with a Bachelors of Science degree in Computer Science. I have been interested in anything related to technology since I was tall enough to reach the VCR machine. I started coding and developing my freshman year of college and I soon became passionate about computer science. Since then I have developed a strong interest in android and web development.</p>
+<p>Outside of my professional interests I listen to a lot of music, discover many unique craft beers, and enjoy staying up to date on all things related to technology. I have developed an interest in some computer hardware as well. I built my own desktop computer a couple years ago, and have helped a few friends with their own. I also enjoy biking, snowboarding, and playing ultimate frisbee in my free time.</p>
+</section>
+<div id=projects class=projects_>
+<h2>Projects</h2>
+<section class=counter>
+<h3>Counter for Wear
+<a class=faicon href="https://github.com/ahatzz11/Counter-for-Wear">
+<i class="fa fa-github"></i>
+</a>
+</h3>
+<article>
+<ul>
+<li>A counting application for Android Wear</li>
+<li>Language: Java</li>
+</ul>
+</article>
+</section>
+<section class=hotel>
+<h3>Hotel System
+<a class=faicon href="https://github.com/ahatzz11/Hotel-System">
+<i class="fa fa-github"></i>
+</a>
+</h3>
+<article>
+<ul>
+<li>A parallelized hotel reservation system</li>
+<li>Parallelization is achieved by the use semaphores</li>
+<li>Language: C++</li>
+</ul>
+</article>
+</section>
+<section class=k-means>
+<h3>k-Means
+<a class=faicon href="https://github.com/ahatzz11/k-Means">
+<i class="fa fa-github"></i>
+</a>
+</h3>
+<article>
+<ul>
+<li>Implementation of the k-Means algorithm both in serial, and parallel</li>
+<li>Language: Python</li>
+</ul>
+</article>
+</section>
+<section class=pokedex>
+<h3>PokéDex
+<a class=faicon href="https://github.com/ahatzz11/PoxeDex">
+<i class="fa fa-github"></i>
+</a>
+</h3>
+<article>
+<ul>
+<li>The web app and backend database for a pokédex</li>
+<li>Languages: Java; SQL</li>
+</ul>
+</article>
+</section>
+<section class=alexHatz>
+<h3>This Site!
+<a class=faicon href="https://github.com/ahatzz11/alexhatzenbuhler">
+<i class="fa fa-github"></i>
+</a>
+</h3>
+<article class=site>
+<ul class=link>
+<li>This site originally started as an assignment for a class I took in college called <i>Intro to Web Design</i>. I decided to continue to add and polish it into what you see today!</li>
+<li>Languages: HTML5; CSS3; JavaScript; jQuery</li>
+<li>Interested in some more cool stuff? Enter the <a class="first after" href="http://en.wikipedia.org/wiki/Konami_Code">konami code</a> anywhere on this page. <small> works on mobile too!</small>
+<li class=konami><a href=coolstuff.html>
+<i class="fa fa-arrow-up"></i>
+<i class="fa fa-arrow-up"></i>
+<i class="fa fa-arrow-down"></i>
+<i class="fa fa-arrow-down"></i>
+<i class="fa fa-arrow-left"></i>
+<i class="fa fa-arrow-right"></i>
+<i class="fa fa-arrow-left"></i>
+<i class="fa fa-arrow-right"></i>
+<span class=konamiba>B</span>
+<span class=konamiba>A</span>
+<small><b> or click if you're lazy</b></small></a>
+</li>
+</ul>
+</article>
+</section>
+</div>
+<div id=resume class=resume_>
+<h2>Resume</h2>
+<section class=education>
+<h3>Education</h3>
+<article class=ndsu>
+<h4>
+North Dakota State University<span class=timeBreak><br></span>
+<time datetime=2011>(2011</time> &ndash;<time datetime=2015>2015)</time>
+</h4>
+<h5>Computer Science</h5>
+<ul>
+<li>3.35/4.0 Total Cumulative GPA</li>
+<li>Presidential Honor Scholarship Recipient (Academic Scholarship)</li>
+</ul>
+</article>
+<article class=normandale>
+<h4>
+Normandale Community College<span class=timeBreak><br></span>
+<time datetime=2010>(2010</time> &ndash;<time datetime=2011>2011)</time>
+</h4>
+<ul>
+<li>Post Secondary Enrollment Option (PSEO) Student</li>
+<li>3.8/4.0 GPA</li>
+</ul>
+</article>
+</section>
+<section class=workHistory>
+<h3>Work History</h3>
+<article class=moolah>
+<h4>
+Moolah<span class=timeBreak><br></span>
+<time datetime=2014-01>(January 2014</time> &ndash;<time datetime=2014-10>October 2014)</time>
+</h4>
+<h5>Head of Customer Service</h5>
+<ul>
+<li>Demonstrated leadership by hiring and managing a staff of 4 to provide 24-hour customer support</li>
+<li>Utilized strong critical thinking by developing a training program on customer supprt for new agents</li>
+<li>Displayed organizational skills by preparing and managing 750 Bitcoin ($450,000) worth of investments during our public investment rounds</li>
+<li>Applied previous interpersonal and customer service skills to provide support to clients who experienced problems using Moolah services</li>
+</ul>
+</article>
+<article class=ndsuIts>
+<h4>
+NDSU Information Technology Services<span class=timeBreak><br></span>
+<time datetime=2013-02>(Febuary 2013</time> &ndash;<time datetime=2014-08>August 2014)</time>
+</h4>
+<h5>IVN Technician</h5>
+<ul class=ivnTech>
+<li>Utilized technical skills by maintaining and troubleshooting video conference calls between colleges</li>
+</ul>
+<h5>Classroom Technician</h5>
+<ul>
+<li>Developed problem solving and computer skills by providing technical support for instructors encountering technical issues with computers, projects, and other peripherals</li>
+<li>Demonstrated flexibility and adaptability by working on many different technical issues throughout the school
+</ul>
+</article>
+<article class=bestBuy>
+<h4>
+Best Buy<span class=timeBreak><br></span>
+<time datetime=2013-10>(October 2013</time> &ndash;<time datetime=2014-01>January 2014)</time>
+</h4>
+<h5>Mobile Sales Speciailist - Seasonal</h5>
+<ul>
+<li>Showcased technical knowledge of mobile devices and other electronics by informing customers about products</li>
+<li>Improved interpersonal skills by dealing with customers to offer exceptional service</li>
+</ul>
+</article>
+<article class=nickelodeonUniverse>
+<h4>
+Nickelodeon Universe<span class=timeBreak><br></span>
+<time datetime=2012-06>(June 2012</time> &ndash;<time datetime=2014-02>February 2014)</time>
+</h4>
+<h5>Ride Operator</h5>
+<ul>
+<li>Demonstrated responsibility by ensuring the safety of guests as they move throughout the park and go on rides</li>
+</ul>
+</article>
+<article class="warren link">
+<h4>
+<a class="first after" href="http://www.ymcatwincities.org/camps/camp_warren/">YMCA Camp Warren</a><span class=timeBreak><br></span>
+<time datetime=2010-06>(June 2010</time> &ndash;<time datetime=2010-08>August 2010)</time>
+</h4>
+<h5>Summer Camp Counselor</h5>
+<ul>
+<li>Showcased flexibility and adaptability as a cabin leader for 10-12 children, ages 8-13, in two week intervals</li>
+<li>Improved interpersonal and leadership skills by co-leading camp activities and guiding newer staff</li>
+</ul>
+</article>
+</section>
+<section class=involvement>
+<h3>Involvement</h3>
+<ul>
+<li>ACM (Association for Computing Machinery), Member <time datetime=2012>(2012</time> &ndash;<span class=time>Present)</span></li>
+<li>Eagle Scout awarded in June 2007 by Boy Scouts of America Troop 293 in Apple Valley, MN</li>
+</ul>
+</section>
+<section class=langTech>
+<h3>Languages and Technologies</h3>
+<ul>
+<li>Java; C; C++; C#; HTML5; CSS3; XML; SQL</li>
+<li>Visual Studio; Eclipse; Netbeans; Android Studio; SVN; Git</li>
+</ul>
+</section>
+<div class=resumeDownload>
+<span class="square link">
+<a class="before after" href="documents/Resume%20-%20Alex%20Hatzenbuhler.pdf">download a copy of my resume as a pdf</a>
+</span>
+</div>
+</div>
+<section id=connect class=connect_>
+<h2>Connect</h2>
+<ul>
+<li>
+<a href="https://www.facebook.com/alex.hatzz11" title="Go to my Facebook">
+<img src="images/connect/facebook.png" alt="Facebook Icon"/></a>
+</li>
+<li>
+<a href="https://plus.google.com/u/0/+AlexHatzenbuhler" title="Go to my Google+">
+<img src="images/connect/googleplus.png" alt="Google Plus Icon"/></a>
+</li>
+<li>
+<a href="http://twitter.com/ahatzz11" title="Go to my Twitter">
+<img src="images/connect/twitter.png" alt="Twitter Icon"/></a>
+</li>
+<li>
+<a href="https://www.linkedin.com/in/alexhatzenbuhler" title="Go to my LinkedIn">
+<img src="images/connect/linkedin.png" alt="Linkedin Icon"/></a>
+</li>
+<li>
+<a href="mailto:alex.hatzz11@gmail.com" title="Send me an email" target=_blank>
+<img src="images/connect/gmail.png" alt="Gmail Icon"/></a>
+</li>
+</ul>
+</section>
+<footer id=foot>
+<span class=copyright>Designed by
+<a href=index.html>Alex Hatzenbuhler</a>
+</span>
+<a href=coolstuff.html>
+<div class=bubble></div>
+</a>
+</footer>
+<script>$(document).ready(function(){$('#nav').localScroll({target:'body',duration:800,});});</script>
+<script async src="javascript/greeneggs.js"></script>
+<script>window.onload=function(){function openCool(){window.open("coolstuff.html","_self")}
+var ham=new Ham(openCool);};</script>
+<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-59764162-1','auto');ga('send','pageview');</script>
 </body>
 </html>

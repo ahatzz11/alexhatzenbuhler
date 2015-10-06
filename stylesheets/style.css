@@ -1,525 +1,77 @@
-/* blank since there is no background */
-a {
-	text-decoration: none;
-}
-
-.aboutMe_, .connect_ {
-	background-color: #fff;
-}
-
-/* sets positioning for each section/div */
-.aboutMe_, .connect_, .resume_, .projects_ {
-	text-align: center;
-	margin: 0 auto 0;
-	padding: 0;
-	width: 70%;
-	border-radius: 10px;
-}
-
-.about_me {
-	text-align: left;
-}
-
-body {
-	font-family: "Lato", sans-serif;
-	text-align: center;
-	width: 100%;
-	height: 100%;
-	margin: 0;
-	padding: 0;
-}
-
-.bubble {
-	position: fixed;
-	left: 24px;
-	bottom: 24px;
-	width: 40px;
-	height: 40px;
-	border-radius: 20px;
-	background-color: #388e3c;
-	opacity: 0.03;
-}
-
-/* connect icon adjustment */
-.connect_ ul {
-	margin: auto;
-	padding: 20px 0 0;
-	text-align: center;
-}
-
-.connect_ ul li {
-	display: inline;
-	list-style-type: none;
-	padding: 0 5% 0 5%;
-	width: 60px;
-	height: 60px;
-}
-
-.connect_ ul li img {
-	width: 60px;
-	height: 60px;
-	border-radius: 30px;
-}
-
-.connect_ ul li img:hover, .connect_ ul li img:focus {
-	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-}
-
-/* this is to correct for the default div rules so resume is uniform */
-div {
-	width: 100%;
-	margin: 0 auto 0;
-}
-
-/* floating action button */
-#fabID {
-	-webkit-transform: translateZ(0);		/* fixes static issues on chrome/windows */
-	display: none;
-	position: fixed;
-	right: 24px;
-	bottom: 24px;
-	background: #43a047;
-	width: 56px;
-	height: 56px;
-	border-radius: 28px;
-	box-shadow: 0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28);
-}
-
-#fabID:hover {
-	display: block;
-	box-shadow: 0 0 6px rgba(0,0,0,.16),0 6px 12px rgba(0,0,0,.32);15 20
-}
-
-.fab img {
-	width: 24px;
-	height: 24px;
-	padding: 16px;
-}
-
-.fab img:hover {
-	opacity: 1.0;
-}
-
-/* faicon is the fontAwesome github icon */
-.faicon {
-	float: right;
-	font-size: 56px;
-	color: #000;
-	margin-left: 210px;
-	padding: 7px 10px 10px;
-}
-
-.faicon:hover, .faicon:focus {
-	font-size: 56px;
-	color: #1976d2;
-}
-
-/* footer is for the bottom name and the link */
-footer {
-	padding: 50px 0 25px;
-}
-
-footer .copyright {
-	font-size: small;
-	color: #bdbdbd;
-}
-
-footer .copyright a {
-	font-size: small;
-	color: #bdbdbd;
-}
-
-/* headings */
-h1 {
-	font-family: "Roboto", serif;
-	font-size: 6em;
-	font-weight: 100;
-	line-height: 1.2;
-	color: white;
-	text-align: center;
-	padding: 30px 0 0 0;
-	margin: 0 0 0 0;
-}
-
-h2 {
-	font-size: 4em;
-	font-weight: 400;
-	line-height: 1em;
-	text-align: center;
-	margin: 0;
-	padding: 60px 0 10px;
-}
-
-h3 {
-	font-size: 2em;
-	text-align: left;
-	margin: 0;
-	line-height: 1;
-}
-
-h4 {
-	font-size: 1.1em;
-	margin: 0;
-	text-align: left;
-	padding-top: 10px;
-}
-
-h5 {
-	display: block;
-	color: #424242;
-	text-align: left;
-	margin-top: 0;
-	margin-bottom: 0;
-	font-style: italic;
-}
-
-/* the top colored block - blue */
-.headerBlock {
-	position: relative;
-	z-index: 7;
-	width: 100%;
-	background-color: #1976d2;
-	margin: 0 0 70px;
-	padding: 60px 0 42px 0px;		/* 27 to make header exactly 350px */
-	text-align: center;
-}
-
-/* puts spacing between h3 and list, since there is no h4 to add space */
-.involvement ul, .langTech ul , .projects_ section ul{
-	padding-top: 10px;
-}
-
-/* allows the two lists to be together, since they are both under */
-.ivnTech {
-	margin-bottom: 0;
-	padding-bottom: 5px;
-}
-
-/* konami and the following are for the konami code in projects */
-.konami {
-	font-family: "Dosis", sans-serif;
-	list-style-type: none;
-	opacity: .1;
-	text-align: center;
-}
-
-.konami a:hover {
-	color: #000;
-}
-
-.konami a:hover {
-	opacity: .5;
-}
-
-.konami small {
-	opacity: 1;
-}
-
-.konamiba {
-	font-family: "Dosis", sans-serif;
-	font-weight: 800;
-	font-size: 1.1em;
-}
-
-/* lets the download link be at the bottom of the lang section */
-.langTech {
-	margin-bottom: 0px;
-}
-
-/*mobile menu button*/
-#menu {
-	display: none;
-}
-
-/* nav - navUl is for styling the nav bar and nav elements */
-nav {
-	position: absolute;
-	background-color: #1976d2;
-	font-size: 1.3em;
-	line-height: 56px;
-	top: 350px;
-	z-index: 2;
-	width: 100%;
-}
-
-nav ul li {
-	display: inline-block;
-	list-style-type: none;
-	padding-right: 3%;
-	padding-left: 3%;
-}
-
-#navUl {
-	margin: 0 0 0 0;
-	padding: 0 0 0 0;
-	width: 100%;
-	box-shadow: 0 4px 8px rgba(0,0,0,.28), 0 0 4px rgba(0,0,0,.14);
-}
-
-#navUl a {
-	color: #fff;
-	opacity: 0.75;
-	font-size: 1em;
-}
-
-#navUl a:hover, #navUl a:focus {
-	opacity: 1.0;
-}
-
-p {
-	font-weight: 400;
-	font-size: 1em;
-	line-height: 1.2em;
-	text-align: left;
-}
-
-/* main profile picture */
-.profile {
-	width: 120px;
-	height: 120px;
-	border-radius: 60px;
-	text-align: center;
-	padding: 0;
-	margin: 0;
-}
-
-/* each main section, about me, connect, education, workHistory, etc. */
-section {
-	background-color: #ececec;
-	border-radius: 10px;
-	margin: 0 auto 30px;
-	padding: 10px 13px 15px;		/* 13 to account for line height on headings */
-}
-
-small {
-	font-size: .5em;
-	opacity: .5;
-}
-
-/* dates throughout */
-time {
-	font-style: italic;
-	font-size: smaller;
-	font-weight: 400;
-}
-
-.time {
-	font-style: italic;
-	font-size: smaller;
-	font-weight: 400;
-}
-
-/* has dates on the next line for mobile */
-.timeBreak {
-	display: none;
-}
-
-ul {
-	margin-top: 0;
-	margin-bottom: 0;
-}
-
-/* moves all bullet points left */
-ul li {
-	text-align: left;
-	line-height: 1.4em;
-}
-
-/* ************************************************************ */
-
-/* The following is for the active resume link */
-/* Created by Brenden Palmer: http://codepen.io/brenden/pen/RNZXqx */
-.resumeDownload {
-	background-color: #fff;
-	text-align: right;
-	padding: 10px 0 0 0;
-	width: 100%;
-}
-
-.link a.after:after {
-    bottom:-0.25em;
-}
-
-.link a.first:after {
-    left:0;
-}
-
-.link a.before:hover:before, .link a.after:hover:after {
-    width:100%;
-}
-
-.link a, .link a:visited, .link a:hover, .link a:active {
-    -webkit-backface-visibility: hidden;
-            backface-visibility: hidden;
-	position: relative;
-    transition: .6s color ease;
-	text-decoration: none;
-	color: #000000;
-	font-size: 1em;
-}
-
-.link a:hover {
-	color: #1976d2;
-}
-
-.link a.before:before, .link a.after:after {
-    content: "";
-    transition: .6s all ease;
-    -webkit-backface-visibility: hidden;
-            backface-visibility:hidden;
-    position: absolute;
-}
-
-.link a.before:before {
-    top: -0.25em;
-    border-radius: 10px;
-}
-
-.link a.after:after {
-    bottom: -0.25em;
-    border-radius: 10px;
-}
-
-
-
-.link a.before:before, .link a.after:after {
-    height: 5px;
-    height: 0.2rem;
-    width: 0;
-    background: #1976d2;
-}
-
-.square {
-    box-sizing: border-box;
-    text-align: left;
-    position: relative;
-    font-size: 1em;
-    overflow: hidden;
-}
-
-.square a {
-    position: static !important;
-    text-align: left;
-    font-size: 100% !important;
-    padding: 0.2em 0.4em;
-}
-
-.square:before,.square:after {
-  	content: "";
-	box-sizing: border-box;
-	transition: .6s all ease;
-	-webkit-backface-visibility: hidden;
-	        backface-visibility: hidden;
-	position: absolute;
-	width: 5px;
-	width: 0.2rem;
-	height: 0;
-	background: #1976d2;
-}
-
-.square:before {
-	left: 0;
-	border-radius: 10px;
-	bottom: -0.2em;
-}
-
-.square:after {
-	right:  0;
-	border-radius: 10px;
-	top:-0.2em;
-}
-
-.square a:before {
-    left: 0;
-    border-radius: 10px;
-    transition: .6s all ease;
-}
-
-.square a:after {
-    right: 0;
-    border-radius: 10px;
-    transition: .6s all ease;
-}
-
-.square:hover:before,.square:hover:after {
-  	height:calc(100% + 0.4em);
-}
-
-.square:hover a:before,.square:hover a:after {
-    width: 100%;
-}
-
-.site a, .site a:visited, .site a:hover, .site a:active {
-  	-webkit-backface-visibility: hidden;
-        	backface-visibility: hidden;
-	position: relative;
-	transition: 0.6s color ease;
-	text-decoration: none;
-}
-
-.site a:hover {
-	color: #1976d2;
-}
-
-.site a.after:after {
-  	content: "";
-  	transition: 0.6s all ease;
-  	-webkit-backface-visibility: hidden;
-        	backface-visibility: hidden;
-  	position: absolute;
-}
-.site a.after:after {
-  	bottom: -0.11em;
-}
-
-.site a.after:after {
-    height: 5px;
-    height: 0.2rem;
-    width: 0;
-    background: #1976d2;
-}
-
-.site a.first:after {
-  	left: 0;
-}
-.site a.after:hover:after {
-  	width: 100%;
-}
-
-.warren a, .warren a:visited, .warren a:hover, .warren a:active {
-  	-webkit-backface-visibility: hidden;
-        	backface-visibility: hidden;
-	position: relative;
-	transition: 0.6s color ease;
-	text-decoration: none;
-}
-
-.warren a:hover {
-	color: #388e3c;
-}
-
-.warren a.after:after {
-  	content: "";
-  	transition: 0.6s all ease;
-  	-webkit-backface-visibility: hidden;
-        	backface-visibility: hidden;
-  	position: absolute;
-}
-
-.warren a.after:after {
-  	bottom: -0.1em;
-}
-
-.warren a.after:after {
-    height: 5px;
-    height: 0.2rem;
-    width: 0;
-    background: #388e3c;
-}
-
-.warren a.first:after {
-  	left: 0;
-}
-.warren a.after:hover:after {
-  	width: 100%;
-}
+a{text-decoration:none}
+.aboutMe_,.connect_{background-color:#fff}
+.aboutMe_,.connect_,.resume_,.projects_{text-align:center;margin:0 auto;padding:0;width:70%;border-radius:10px}
+.about_me{text-align:left}
+body{font-family:"Lato",sans-serif;text-align:center;width:100%;height:100%;margin:0;padding:0}
+.bubble{position:fixed;left:24px;bottom:24px;width:40px;height:40px;border-radius:20px;background-color:#388e3c;opacity:.03}
+.connect_ ul{margin:auto;padding:20px 0 0;text-align:center}
+.connect_ ul li{display:inline;list-style-type:none;padding:0 5%;width:60px;height:60px}
+.connect_ ul li img{width:60px;height:60px;border-radius:30px}
+.connect_ ul li img:hover,.connect_ ul li img:focus{box-shadow:0 3px 6px rgba(0,0,0,0.16),0 3px 6px rgba(0,0,0,0.23)}
+div{width:100%;margin:0 auto}
+#fabID{-webkit-transform:translateZ(0);display:none;position:fixed;right:24px;bottom:24px;background:#43a047;width:56px;height:56px;border-radius:28px;box-shadow:0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28)}
+#fabID:hover{display:block;box-shadow:0 0 6px rgba(0,0,0,.16),0 6px 12px rgba(0,0,0,.32)}
+.fab img{width:24px;height:24px;padding:16px}
+.fab img:hover{opacity:1}
+.faicon{float:right;font-size:56px;color:#000;margin-left:210px;padding:7px 10px 10px}
+.faicon:hover,.faicon:focus{font-size:56px;color:#1976d2}
+footer{padding:50px 0 25px}
+footer .copyright{font-size:small;color:#bdbdbd}
+footer .copyright a{font-size:small;color:#bdbdbd}
+h1{font-family:"Roboto",serif;font-size:6em;font-weight:100;line-height:1.2;color:#fff;text-align:center;padding:30px 0 0;margin:0}
+h2{font-size:4em;font-weight:400;line-height:1em;text-align:center;margin:0;padding:60px 0 10px}
+h3{font-size:2em;text-align:left;margin:0;line-height:1}
+h4{font-size:1.1em;margin:0;text-align:left;padding-top:10px}
+h5{display:block;color:#424242;text-align:left;margin-top:0;margin-bottom:0;font-style:italic}
+.headerBlock{position:relative;z-index:7;width:100%;background-color:#1976d2;margin:0 0 70px;padding:60px 0 42px;text-align:center}
+.involvement ul,.langTech ul,.projects_ section ul{padding-top:10px}
+.ivnTech{margin-bottom:0;padding-bottom:5px}
+.konami{font-family:"Dosis",sans-serif;list-style-type:none;opacity:.1;text-align:center}
+.konami a:hover{color:#000;opacity:.5}
+.konami small{opacity:1}
+.konamiba{font-family:"Dosis",sans-serif;font-weight:800;font-size:1.1em}
+.langTech{margin-bottom:0}
+#menu{display:none}
+nav{position:absolute;background-color:#1976d2;font-size:1.3em;line-height:56px;top:350px;z-index:2;width:100%}
+nav ul li{display:inline-block;list-style-type:none;padding-right:3%;padding-left:3%}
+#navUl{margin:0;padding:0;width:100%;box-shadow:0 4px 8px rgba(0,0,0,.28),0 0 4px rgba(0,0,0,.14)}
+#navUl a{color:#fff;opacity:.75;font-size:1em}
+#navUl a:hover,#navUl a:focus{opacity:1}
+p{font-weight:400;font-size:1em;line-height:1.2em;text-align:left}
+.profile{width:120px;height:120px;border-radius:60px;text-align:center;padding:0;margin:0}
+section{background-color:#ececec;border-radius:10px;margin:0 auto 30px;padding:10px 13px 15px}
+small{font-size:.5em;opacity:.5}
+time{font-style:italic;font-size:smaller;font-weight:400}
+.time{font-style:italic;font-size:smaller;font-weight:400}
+.timeBreak{display:none}
+ul{margin-top:0;margin-bottom:0}
+ul li{text-align:left;line-height:1.4em}
+.resumeDownload{background-color:#fff;text-align:right;padding:10px 0 0;width:100%}
+.link a.after:after{bottom:-.25em}
+.link a.first:after{left:0}
+.link a.before:hover:before,.link a.after:hover:after{width:100%}
+.link a,.link a:visited,.link a:hover,.link a:active{-webkit-backface-visibility:hidden;backface-visibility:hidden;position:relative;transition:.6s color ease;text-decoration:none;color:#000;font-size:1em}
+.link a:hover{color:#1976d2}
+.link a.before:before,.link a.after:after{content:"";transition:.6s all ease;-webkit-backface-visibility:hidden;backface-visibility:hidden;position:absolute}
+.link a.before:before{top:-.25em;border-radius:10px}
+.link a.after:after{bottom:-.25em;border-radius:10px}
+.link a.before:before,.link a.after:after{height:5px;height:.2rem;width:0;background:#1976d2}
+.square{box-sizing:border-box;text-align:left;position:relative;font-size:1em;overflow:hidden}
+.square a{position:static!important;text-align:left;font-size:100%!important;padding:.2em .4em}
+.square:before,.square:after{content:"";box-sizing:border-box;transition:.6s all ease;-webkit-backface-visibility:hidden;backface-visibility:hidden;position:absolute;width:5px;width:.2rem;height:0;background:#1976d2}
+.square:before{left:0;border-radius:10px;bottom:-.2em}
+.square:after{right:0;border-radius:10px;top:-.2em}
+.square a:before{left:0;border-radius:10px;transition:.6s all ease}
+.square a:after{right:0;border-radius:10px;transition:.6s all ease}
+.square:hover:before,.square:hover:after{height:calc(100% + 0.4em)}
+.square:hover a:before,.square:hover a:after{width:100%}
+.site a,.site a:visited,.site a:hover,.site a:active{-webkit-backface-visibility:hidden;backface-visibility:hidden;position:relative;transition:.6s color ease;text-decoration:none}
+.site a:hover{color:#1976d2}
+.site a.after:after{content:"";transition:.6s all ease;-webkit-backface-visibility:hidden;backface-visibility:hidden;position:absolute;bottom:-.11em;height:5px;height:.2rem;width:0;background:#1976d2}
+.site a.first:after{left:0}
+.site a.after:hover:after{width:100%}
+.warren a,.warren a:visited,.warren a:hover,.warren a:active{-webkit-backface-visibility:hidden;backface-visibility:hidden;position:relative;transition:.6s color ease;text-decoration:none}
+.warren a:hover{color:#388e3c}
+.warren a.after:after{content:"";transition:.6s all ease;-webkit-backface-visibility:hidden;backface-visibility:hidden;position:absolute;bottom:-.1em;height:5px;height:.2rem;width:0;background:#388e3c}
+.warren a.first:after{left:0}
+.warren a.after:hover:after{width:100%}

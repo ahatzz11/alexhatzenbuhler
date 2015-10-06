@@ -1,247 +1,52 @@
-/*
-	media rules regarding screen sizes are before the mobile rules
-	so that the mobile rules can take priority.
-	*/
-
-
-/* these queries allow the icons and name to always be on one line. */
 @media (max-width: 850px) {
-	.aboutMe_, .connect_, .resume_, .projects_, .wallpapers_ {
-		width: 90%;
-	}
-
-	.connect_ ul li {
-		width: 100%;
-		padding: 0 2.1% 0 2.1%;
-	}
-
-	.connect_ ul li a img {
-		width: 60px;
-		height: 60px;
-	}
-
-	/* github icons - formatting text wrapping */
-	.faicon {
-		margin-left: 10px;
-		margin-bottom: 10px;
-	}
-
-	h1 {
-		font-size: 4em;
-	}
-
-	nav {
-		top: 295px; 		/* when font size is smaller on a small window */
-	}
+.aboutMe_,.connect_,.resume_,.projects_,.wallpapers_{width:90%}
+.connect_ ul li{width:100%;padding:0 2.1%}
+.connect_ ul li a img{width:60px;height:60px}
+.faicon{margin-left:10px;margin-bottom:10px}
+h1{font-size:4em}
+nav{top:295px}
 }
-
 @media (max-width: 600px) {
-	.connect_ ul li {
-		width: 100%;
-		padding: 0 3% 0 3%;
-	}
-
-	.connect_ ul li a img {
-		width: 40px;
-		height: 40px;
-	}
-
-	h1 {
-		font-size: 3em;
-	}
-
-	nav {
-		top: 290px; 		/* when font size is smaller on a small window */
-	}
-
-	/* changes nav font size to be on one line */
-	#navUl a  {
-		font-size: .9em;
-	}
-
-	#navUl a:hover {
-		opacity: 1.0;
-		font-size: .9em;	/* font size didn't change for hover autpmatically */
-	}
+.connect_ ul li{width:100%;padding:0 3%}
+.connect_ ul li a img{width:40px;height:40px}
+h1{font-size:3em}
+nav{top:290px}
+#navUl a{font-size:.9em}
+#navUl a:hover{opacity:1;font-size:.9em}
 }
-
-/* changes connect icons */
 @media (max-width: 586px) {
-	.connect_ ul li a img {
-		width: 50px;
-		height: 50px;
-	}
-
-	.icon {
-		opacity: 1.0;
-	}
+.connect_ ul li a img{width:50px;height:50px}
+.icon{opacity:1}
 }
-
 @media (max-width: 480px) and (min-width: 374px) {
-	nav {
-		top: 290px; 		/* when font size is smaller on a small window */
-	}
-
-	/* changes nav font size to be on one line */
-	#navUl a {
-		font-size: .9em;
-	}
-
-	#navUl a:hover {
-		opacity: 1.0;
-		font-size: .75em;	/* font size didn't change for hover autpmatically */
-	}
+nav{top:290px}
+#navUl a{font-size:.9em}
+#navUl a:hover{opacity:1;font-size:.75em}
 }
-
-/* ********************************************************************** */
-/*
-	mobile changes:
-		• mobile devices have less margin on the side
-		• connect has a 100% width and icons are 48x48 to accomodate icons on mobile
-		• headings and text have been resized to look better on mobile
-		• profile picture and h1 are larger
-	*/
-
 @media only screen and (max-device-width: 412px) {
-	.aboutMe_ p {
-		margin: 10px 20px 10px;
-	}
-
-	.aboutMe_, .connect_, .resume_, .projects_, .wallpapers_ {
-		width: 100%;
-		padding: 0 0 0 0;
-	}
-
-	/* larger connect icons for touch */
-	.connect_ ul {
-		width: 100%;
-	}
-
-	.connect_ ul li {
-		width: 100%;
-		padding: 0 2.3% 0 2.3%;
-	}
-
-	.connect_ ul li a img {
-		width: 48px;
-		height: 48px;
-	}
-
-	/* github icons */
-	.faicon {
-		float: right;
-		font-size: 48px;
-		color: #000;
-		margin-left: 10px;
-		margin-bottom: 10px;
-	}
-
-	.faicon:hover {
-		font-size: 48px;
-		color: #1976d2;
-	}
-
-	/* headings */
-	h1 {
-		font-size: 3.3em;
-		margin-top: -15px;
-		padding-bottom: 5px;
-	}
-
-	h2 {
-		font-size: 2em;
-
-	}
-
-	h3 {
-		font-size: 1.4em;
-		line-height: 1;
-	}
-
-	h4 {
-		font-size: 1em;
-		line-height: 1em;
-		padding-top: 6px;
-	}
-
-	h5 {
-		font-size: .84em;
-
-	}
-
-	/* top bar */
-	.headerBlock {
-		margin: 0 0 90px;
-		padding: 40px 0 0;
-	}
-
-	/* back icon on coolstuff page always white on mobile */
-
-
-	/* padding to match h4 */
-	.involvement ul, .langTech ul{
-		padding-top: 6px;
-	}
-
-	/* nav bar */
-	nav {
-		line-height: 56px;
-		font-size: .84em;
-		font-weight: 700;
-		text-align: center;
-		top: 290px;
-	}
-
-	nav ul li {
-	    padding-right: 3%;
-  		padding-left: 3%;
-  		font-size: 1.2em;
-	}
-
-	p {
-		font-size: .86em;
-	}
-
-	/* profile picture */
-	.profile {
-		width: 100px;
-		height: 100px;
-		border-radius: 50px;
-		padding: 0;
-	}
-
-	/* resume */
-	.resumeDownload {
-		font-size: .84rem;
-		width: 95%;
-		margin-right: 20px;
-	}
-
-	section {
-	    margin: 10px 20px 10px;
-	}
-
-	table {
-		width: 100%;
-		padding: 2px;
-	}
-
-	table td {
-		padding auto;
-		margin: 0px;
-		padding: 1px;
-	}
-
-	.timeBreak {
-		display: inline;
-	}
-
-	ul li {
-		font-size: .86em;
-		font-weight: 400;
-	}
-
-	.wallpapers_ {
-		width: 90%;
-	}
+.aboutMe_ p{margin:10px 20px}
+.aboutMe_,.connect_,.resume_,.projects_,.wallpapers_{width:100%;padding:0}
+.connect_ ul{width:100%}
+.connect_ ul li{width:100%;padding:0 2.3%}
+.connect_ ul li a img{width:48px;height:48px}
+.faicon{float:right;font-size:48px;color:#000;margin-left:10px;margin-bottom:10px}
+.faicon:hover{font-size:48px;color:#1976d2}
+h1{font-size:3.3em;margin-top:-15px;padding-bottom: 5px;}
+h2{font-size:2em}
+h3{font-size:1.4em;line-height:1}
+h4{font-size:1em;line-height:1em;padding-top:6px}
+h5{font-size:.84em}
+.headerBlock{margin:0 0 90px;padding:40px 0 0}
+.involvement ul,.langTech ul{padding-top:6px}
+nav{line-height:56px;font-size:.84em;font-weight:700;text-align:center;top:290px}
+nav ul li{padding-right:3%;padding-left:3%;font-size:1.2em}
+p{font-size:.86em}
+.profile{width:100px;height:100px;border-radius:50px;padding:0}
+.resumeDownload{font-size:.84rem;width:95%;margin-right:20px}
+section{margin:10px 20px}
+table{width:100%;padding:2px}
+table td{margin:0;padding:1px}
+.timeBreak{display:inline}
+ul li{font-size:.86em;font-weight:400}
+.wallpapers_{width:90%}
 }
