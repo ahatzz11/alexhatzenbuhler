@@ -30,6 +30,10 @@
 		font-size: 4em;
 	}
 
+	h2 {
+		font-size: 3em;
+	}
+
 	nav {
 		top: 295px; 		/* when font size is smaller on a small window */
 	}
@@ -143,14 +147,13 @@
 
 	/* headings */
 	h1 {
-		font-size: 3.3em;
+		font-size: 3.4em;
 		margin-top: -15px;
 		padding-bottom: 5px;
 	}
 
 	h2 {
 		font-size: 2em;
-
 	}
 
 	h3 {
