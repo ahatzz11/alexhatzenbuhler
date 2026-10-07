@@ -8,7 +8,7 @@ a {
 }
 
 /* sets positioning for each section/div */
-.aboutMe_, .connect_, .resume_, .projects_ {
+.aboutMe_, .connect_, .resume_, .projects_, .relic_ {
 	text-align: center;
 	margin: 0 auto 0;
 	padding: 0;
@@ -171,6 +171,29 @@ h5 {
 	margin-top: 0;
 	margin-bottom: 0;
 	font-style: italic;
+}
+
+/* call-out under the header for what I'm building now */
+.relic_ h3 {
+	font-family: "Roboto", sans-serif;
+	font-weight: 100;
+	font-size: 2.4em;
+	text-align: center;
+	line-height: 1.15;
+	color: #1976d2;
+	padding: 8px 0 2px;
+}
+
+.hatzhold {
+	border-top: 5px solid #1976d2;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	padding: 4px 20px 18px;
+}
+
+.relicCta {
+	text-align: center;
+	padding: 14px 0 2px;
+	background-color: transparent;
 }
 
 /* the top colored block - blue */

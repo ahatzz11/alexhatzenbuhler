@@ -6,7 +6,7 @@
 
 /* these queries allow the icons and name to always be on one line. */
 @media (max-width: 850px) {
-	.aboutMe_, .connect_, .resume_, .projects_, .wallpapers_ {
+	.aboutMe_, .connect_, .resume_, .projects_, .relic_, .wallpapers_ {
 		width: 90%;
 	}
 
@@ -111,7 +111,7 @@
 		margin: 10px 20px 10px;
 	}
 
-	.aboutMe_, .connect_, .resume_, .projects_, .wallpapers_ {
+	.aboutMe_, .connect_, .resume_, .projects_, .relic_, .wallpapers_ {
 		width: 100%;
 		padding: 0 0 0 0;
 	}
@@ -159,6 +159,11 @@
 	h3 {
 		font-size: 1.4em;
 		line-height: 1;
+	}
+
+	.relic_ h3 {
+		font-size: 1.8em;
+		padding-top: 6px;
 	}
 
 	h4 {
