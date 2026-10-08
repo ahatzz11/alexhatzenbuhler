@@ -1,0 +1,13 @@
+{
+  "name": "alexhatzenbuhler",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "cf dev",
+    "build": "cf build",
+    "deploy": "cf deploy"
+  },
+  "devDependencies": {
+    "wrangler": "4.148.0"
+  }
+}

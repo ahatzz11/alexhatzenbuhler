@@ -1,0 +1,25 @@
+# Pages skips these automatically. Workers static assets do not.
+**/node_modules
+**/.DS_Store
+**/.git
+
+# Repository internals. These are not site files.
+**/.gitignore
+**/.gitattributes
+**/.idea
+**/.wrangler
+**/.cloudflare
+**/.dev.vars
+**/.env
+**/.assetsignore
+**/package.json
+**/package-lock.json
+**/wrangler.jsonc
+**/wrangler.json
+**/wrangler.toml
+**/wrangler.config.ts
+**/cloudflare.config.ts
+**/tsconfig.json
+**/readme.md
+**/README.md
+**/README
