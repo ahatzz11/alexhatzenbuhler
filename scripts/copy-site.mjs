@@ -2,10 +2,10 @@ import { cpSync, mkdirSync, readdirSync, rmSync, statSync } from "node:fs";
 import path from "node:path";
 
 const root = path.resolve(import.meta.dirname, "..");
-const dest = path.join(root, "dist");
+const dest = path.join(root, "public");
 
-// The Worker serves this directory. It must not contain the repository root,
-// or local dev watches files that Wrangler itself writes and reloads forever.
+// Vite copies this directory into the client build as-is. It must contain
+// only site files, because cloudflare.config.ts cannot name an assets directory.
 rmSync(dest, { recursive: true, force: true });
 mkdirSync(dest);
 
@@ -32,6 +32,3 @@ for (const name of readdirSync(root)) {
 		cpSync(source, path.join(dest, name));
 	}
 }
-
-// Wrangler reads .assetsignore from the assets directory, which is dist.
-cpSync(path.join(root, ".assetsignore"), path.join(dest, ".assetsignore"));
