@@ -67,6 +67,25 @@
 		opacity: 1.0;
 		font-size: .9em;	/* font size didn't change for hover autpmatically */
 	}
+
+	.hatzhold {
+		padding: 18px 18px 18px;
+	}
+
+	.relic_ h3 {
+		font-size: 1.8em;
+		margin-bottom: 12px;
+	}
+
+	.hatzhold p {
+		max-width: none;
+		font-size: 0.95em;
+		line-height: 1.4em;
+	}
+
+	.relicCta {
+		padding-top: 14px;
+	}
 }
 
 /* changes connect icons */
@@ -162,8 +181,14 @@
 	}
 
 	.relic_ h3 {
-		font-size: 1.8em;
-		padding-top: 6px;
+		font-size: 1.7em;
+		margin-bottom: 10px;
+		padding-top: 0;
+	}
+
+	.hatzhold {
+		margin: 0 auto 20px;
+		padding: 16px 16px 16px;
 	}
 
 	h4 {
