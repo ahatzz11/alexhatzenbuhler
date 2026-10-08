@@ -16,9 +16,19 @@
 			"head_sampling_rate": 0.01
 		}
 	},
+	"build": {
+		"command": "node scripts/copy-site.mjs",
+		"watch_dir": [
+			"documents",
+			"fullscreen",
+			"images",
+			"javascript",
+			"stylesheets"
+		]
+	},
 	"assets": {
-		// Pages serves the repository root and has no build command.
-		"directory": "./",
+		// Site files are copied into dist. The repository root is not uploaded.
+		"directory": "./dist",
 		// Pages redirects /file.html to /file and /file/ to /file.
 		"html_handling": "auto-trailing-slash",
 		// There is no 404.html, so Pages returns index.html with status 200 for unknown paths.
