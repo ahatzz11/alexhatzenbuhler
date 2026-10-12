@@ -4,7 +4,7 @@ export default defineConfig({
 	worker: {
 		name: "alexhatzenbuhler",
 		compatibilityDate: "2026-10-07",
-		// workers.dev stays on until a custom domain is attached later.
+		domains: ["alexhatzenbuhler.com"],
 		workersDev: true,
 		observability: {
 			enabled: true,
