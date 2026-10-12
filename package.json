@@ -1,0 +1,19 @@
+{
+  "name": "alexhatzenbuhler",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.18.0"
+  },
+  "scripts": {
+    "copy-site": "node scripts/copy-site.mjs",
+    "dev": "node scripts/copy-site.mjs && cf dev",
+    "build": "node scripts/copy-site.mjs && cf build",
+    "deploy": "node scripts/copy-site.mjs && cf deploy"
+  },
+  "devDependencies": {
+    "@cloudflare/vite-plugin": "^2.0.0-beta.sha-52b0dc0e9",
+    "cf": "^1.0.0-beta.13",
+    "vite": "^8.3.3"
+  }
+}
