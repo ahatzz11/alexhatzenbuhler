@@ -38,10 +38,15 @@
     <!-- scrolling script -->
     <script type="text/javascript">
         $(document).ready(function () {
-            $('#nav').localScroll({
-                target:'body',
-                duration: 800,
-                });
+            // localScroll animates body, which no longer scrolls in current browsers
+            $('#nav').on('click', 'a[href^="#"]', function (e) {
+                var $target = $($(this).attr('href'));
+                if (!$target.length) {
+                    return;
+                }
+                e.preventDefault();
+                $('html, body').stop().animate({ scrollTop: $target.offset().top }, 800);
+            });
         });
     </script>
     <!-- end scrolling script -->
